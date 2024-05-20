@@ -1,0 +1,23 @@
+---
+const {contact} = Astro.props;
+---
+<div class="floatwa">
+    <div class="tombolwa">
+      <a
+        href={`https://api.whatsapp.com/send?phone=${contact.whatsapp}`}
+        target="_blank"
+      >
+        <img
+          src="/assets/images/fly-whatsapp.png"
+        /></a
+      >
+    </div>
+
+    <div class="tombolwa">
+      <a href={`tel:${contact.phone}`} target="_blank">
+        <img
+          src="/assets/images/fly-phone.png"
+        /></a
+      >
+    </div>
+  </div>

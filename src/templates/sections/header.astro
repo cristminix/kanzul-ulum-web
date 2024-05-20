@@ -1,0 +1,27 @@
+---
+import Brand from "../blocks/brand.astro";
+import MainWebMenubar from "../blocks/main-web-menubar.astro";
+import MainMenuButtonIcon from "../blocks/main-menu-button-icon.astro";
+import TopBar from "./top-bar.astro";
+
+const {company} = Astro.props;
+---
+<div id="headerwrap" class="tf_box tf_w">
+    <TopBar company={company}/>
+    <!-- /header-widgets -->
+    <MainMenuButtonIcon/>
+
+    <header
+      id="header"
+      class="tf_box pagewidth tf_clearfix"
+      itemscope="itemscope"
+      itemtype="https://schema.org/WPHeader"
+    >
+      <Brand company={company}/>
+      <!-- /.header-bar -->
+
+      <MainWebMenubar/>
+    </header>
+    <!-- /#header -->
+  </div>
+  <!-- /#headerwrap -->

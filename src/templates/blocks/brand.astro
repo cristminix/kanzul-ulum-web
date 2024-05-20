@@ -1,0 +1,19 @@
+---
+const {company} = Astro.props;
+---
+<div class="header-bar tf_box">
+    <div id="site-logo">
+      <a href="/" title={company.name}
+        ><img
+          src="/assets/images/logo/logo.png"
+          alt={company.name}
+          title={`Logo ${company.name}`}
+          width="266"
+          height="55"
+          class="site-logo-image"
+        /></a
+      >
+    </div><div id="site-description" class="site-description">
+      <span>Pengurus {company.shortAddress}</span>
+    </div>
+  </div>
