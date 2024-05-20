@@ -1,0 +1,58 @@
+---
+import FooterBrand from "../blocks/footer-brand.astro";
+import FooterContactPersonListWithCompanyEmail from "../blocks/footer-contact-person-list-with-company-email.astro";
+import FooterFullCompanyAddress from "../blocks/footer-full-company-address.astro";
+import FooterSocialNetButtons from "../blocks/footer-social-net-buttons.astro";
+
+const {company} = Astro.props;
+---
+<div id="footerwrap" class="tf_box tf_clear">
+    <footer
+      id="footer"
+      class="tf_box pagewidth tf_scrollbar tf_rel tf_clearfix"
+      itemscope="itemscope"
+      itemtype="https://schema.org/WPFooter"
+    >
+      <div
+        class="back-top tf_textc tf_clearfix back-top-float back-top-hide"
+      >
+        <div class="arrow-up">
+          <a aria-label="Back to top" href="#header"
+            ><span class="screen-reader-text">Back To Top</span></a
+          >
+        </div>
+      </div>
+      <div class="main-col first tf_clearfix">
+        <div class="footer-left-wrap first">
+          <FooterBrand company={company}/>
+
+          <FooterSocialNetButtons/>
+        </div>
+
+        <div class="footer-right-wrap">
+          <div class="footer-nav-wrap"></div>
+          <!-- /.footer-nav-wrap -->
+        </div>
+      </div>
+
+      <div class="section-col tf_clearfix">
+        <div class="footer-widgets-wrap">
+          <div class="footer-widgets tf_clearfix">
+            <FooterFullCompanyAddress/>
+            <FooterContactPersonListWithCompanyEmail/>
+          </div>
+          <!-- /.footer-widgets -->
+
+          <!-- /footer-widgets -->
+        </div>
+      </div>
+      <div class="footer-text tf_clear tf_clearfix">
+        <div class="footer-text-inner">
+          <div class="one">
+            © 2021 Pondok Pesantren Kanzul Ulum Cirebon. All Rights Reserved.
+          </div>
+        </div>
+      </div>
+      <!-- /.footer-text -->
+    </footer><!-- /#footer -->
+  </div><!-- /#footerwrap -->
