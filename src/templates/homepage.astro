@@ -1,7 +1,7 @@
 ---
 
 
-import {contact,company} from "../data/site-data.json"
+import {contact,company,contact_person} from "../data/site-data.json"
 
 import Layout from "./layouts/default.astro"
 import FloatingToolbarButton from "./sections/floating-toolbar-button.astro"
@@ -35,7 +35,7 @@ const page = {
     <Header company={company} />
 
     <HomepageMainContent />
-    <Footer company={company} />
+    <Footer company={company} cp={contact_person}/>
   </div><!-- /#pagewrap -->
   <!-- wp_footer -->
   <script type="text/javascript">

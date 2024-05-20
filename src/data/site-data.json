@@ -1,6 +1,6 @@
 {
   "contact": {
-    "whatapp": "085295855514",
+    "whatsapp": "085295855514",
     "phone": "085295855514"
   },
 
@@ -8,10 +8,22 @@
     "name": "Pondok Pesantren Kanzul Ulum",
     "shortAddress": "Pondok Pesantren Kanzul Ulum Kesambi Cirebon",
     "address": "Jl. Perjuangan No.77 RT.01/RW.10 Karyabakti Kelurahan Karyamulya Kecamatan Kesambi Kota Cirebon 45131",
-    "fb": "",
-    "twitter": "",
-    "youtube": "",
-    "ig": "",
-    "email": "company@email.com"
-  }
+    "fb": "https://www.facebook.com/people/Pondok-pesantren-Kanzul-ulum/100064233330714/",
+    "twitter": false,
+    "tiktok":false,
+    "youtube": "@KanzulUlumKotaCirebon",
+    "ig": "pp_kanzululum",
+    "email": "Ponpeskanzululum21@gmail.com"
+  },
+
+  "contact_person":[
+    {
+        "name":"Abas Abdul Latief",
+        "phone":"088210465085"
+    },
+    {
+        "name":"Putri Nurjanah",
+        "phone":"0895422811011"
+    }
+  ]
 }

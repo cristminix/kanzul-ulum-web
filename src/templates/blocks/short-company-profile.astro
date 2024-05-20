@@ -1,3 +1,11 @@
+---
+const shortProfile=[
+`Tosuerdi adalah seorang pendidik, dosen, dan penulis yang lahir pada 21 Maret 1979 di Brebes, Jawa Tengah. Ia telah mengajar di berbagai sekolah dan perguruan tinggi sejak tahun 2000. Tosuerdi juga merupakan pendiri Yayasan "Kanzul Ulum Jaya" yang berfokus pada pendidikan Islam. Selain itu, ia memiliki latar belakang pendidikan yang meliputi pendidikan dasar, menengah, dan tinggi, serta telah menulis beberapa karya ilmiah dan menjadi penerjemah buku.`,
+
+`Tosuerdi memiliki tujuan untuk terus belajar, berkhidmat dalam ilmu, dan menjadi orang yang bermanfaat bagi keluarga dan masyarakat. Ia telah mengajar di berbagai sekolah, termasuk SMA dan madrasah, serta menjadi dosen di beberapa perguruan tinggi. Tosuerdi juga pernah menjabat sebagai Dekan Fakultas Agama Islam dan telah menulis beberapa buku serta menerjemahkan buku-buku lainnya. Selain itu, ia aktif dalam kegiatan Yayasan "Kanzul Ulum Jaya" yang berfokus pada pendidikan Islam.`
+]
+ 
+---
 <!-- module_row -->
 <div
 data-lazy="1"
@@ -58,32 +66,9 @@ class="module_row themify_builder_row tb_y2sv138 tf_clearfix hide-tablet hide-ta
         data-lazy="1"
       >
         <div class="tb_text_wrap">
-          <p>
-            Syaikh Sholeh Muhammad Basalamah, beliau
-            mendirikan yayasan Pendidikan Islam Darussalam
-            pada tahun 1988. Berselang kurang lebih 11
-            tahun, madrasah ini menjadi pondok pesantren
-            yang cukup besar, diberi nama Pondok Pesantren
-            Darussalam. Pada tahun 1999 beliau menerima
-            santri yang ingin tinggal di Pondok Pesantren
-            Darussalam, yang sebelumnya mereka tinggal di
-            rumah masing-masing. Tetapi sekarang ponpes
-            Darussalam terus berkembang, baik secara
-            kualitas maupun kuantitas.
-          </p>
-          <p>
-            Ponpes Darussalam mendidik para santri dengan
-            menerapkan tarbiyyatussalaf dan dikolaborasi
-            dengan kurikulum yang diadopsi dari pembelajaran
-            khas Timur Tengah. Ponpes Darussalam tidak
-            menyertakan pendidikan formal, seperti SD bahkan
-            sampai Perguruan Tinggi, namun ijazah yang
-            dikeluarkan bisa digunakan untuk mendaftar ke
-            tingkat pendidikan yang lebih tinggi, baik di
-            Indonesia atau di Timur Tengah. Jenjang
-            pendidikan yang ada di pondok ini dimulai dari
-            i&#8217;dadi, ibtida, tsanawiy, kemudian aliyah.
-          </p>
+          {shortProfile.map((text, index) => (
+            <p key={index}>{text}</p>
+          ))}
         </div>
       </div>
       <!-- /module text -->
@@ -155,11 +140,11 @@ class="module_row themify_builder_row tb_1voz655 tf_clearfix hide-desktop"
       </div>
       <!-- /module plain text --><!-- module text -->
       <div
-        class="module module-text tb_ptm1658 tb_text_dropcap"
+        class="module module-text tb_ptm1658 "
         data-lazy="1"
       >
         <div class="tb_text_wrap">
-          <p>Syaikh Sholeh Muhammad Basalamah,</p>
+          <p>Tosuerdi ,</p>
         </div>
       </div>
       <!-- /module text -->
@@ -185,17 +170,10 @@ class="module_row themify_builder_row tb_7soo678 tf_clearfix hide-desktop"
         class="module module-text tb_t81s43"
         data-lazy="1"
       >
-        <div class="tb_text_wrap">
+        <div class="tb_text_wrap" style={{marginTop:"20px"}}>
           <p>
-            beliau mendirikan yayasan Pendidikan Islam
-            Darussalam pada tahun 1988. Berselang kurang
-            lebih 11 tahun, madrasah ini menjadi pondok
-            pesantren yang cukup besar, diberi nama Pondok
-            Pesantren Darussalam. Pada tahun 1999 beliau
-            menerima santri yang ingin tinggal di Pondok
-            Pesantren Darussalam, yang sebelumnya mereka
-            tinggal di rumah masing-masing. <a
-              href="profil-ponpes-kanzul ulum-jatibarang-brebes/index.html"
+            {shortProfile[0]} <a
+              href="/profil"
               >Selengkapnya</a
             >
           </p>

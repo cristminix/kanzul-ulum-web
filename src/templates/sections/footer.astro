@@ -4,7 +4,7 @@ import FooterContactPersonListWithCompanyEmail from "../blocks/footer-contact-pe
 import FooterFullCompanyAddress from "../blocks/footer-full-company-address.astro";
 import FooterSocialNetButtons from "../blocks/footer-social-net-buttons.astro";
 
-const {company} = Astro.props;
+const {company,cp} = Astro.props;
 ---
 <div id="footerwrap" class="tf_box tf_clear">
     <footer
@@ -26,7 +26,7 @@ const {company} = Astro.props;
         <div class="footer-left-wrap first">
           <FooterBrand company={company}/>
 
-          <FooterSocialNetButtons/>
+          <FooterSocialNetButtons company={company}/>
         </div>
 
         <div class="footer-right-wrap">
@@ -39,7 +39,7 @@ const {company} = Astro.props;
         <div class="footer-widgets-wrap">
           <div class="footer-widgets tf_clearfix">
             <FooterFullCompanyAddress address={company.address}/>
-            <FooterContactPersonListWithCompanyEmail/>
+            <FooterContactPersonListWithCompanyEmail cp={cp} email={company.email}/>
           </div>
           <!-- /.footer-widgets -->
 

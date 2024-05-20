@@ -1,11 +1,16 @@
+---
+const {company} = Astro.props
+const {fb,ig,youtube,twitter}=company
+---
 <div class="col4-2 tf_box tf_float">
     <div
       id="themify-social-links-1010"
       class="widget themify-social-links"
     >
       <ul class="social-links horizontal">
-        <li class="social-link-item font-icon icon-medium">
-          <a href="#" aria-label="" target="_blank" rel="noopener"
+        {ig&&(
+<li class="social-link-item font-icon icon-medium">
+          <a href={`https://instagram.com/${ig}`} aria-label="" target="_blank" rel="noopener"
             ><em
               ><svg
                 aria-label=""
@@ -16,9 +21,12 @@
             >
           </a>
         </li>
+        )}
+        
         <!-- /themify-link-item -->
-        <li class="social-link-item font-icon icon-medium">
-          <a href="#" aria-label="" target="_blank" rel="noopener"
+        {fb&&(
+ <li class="social-link-item font-icon icon-medium">
+          <a href={fb} aria-label="" target="_blank" rel="noopener"
             ><em
               ><svg
                 aria-label=""
@@ -29,9 +37,10 @@
             >
           </a>
         </li>
-        <!-- /themify-link-item -->
-        <li class="social-link-item font-icon icon-medium">
-          <a href="#" aria-label="" target="_blank" rel="noopener"
+        )}
+       {twitter&&(
+  <li class="social-link-item font-icon icon-medium">
+          <a href={`https://twitter.com/${twitter}`} aria-label="" target="_blank" rel="noopener"
             ><em
               ><svg
                 aria-label=""
@@ -42,9 +51,13 @@
             >
           </a>
         </li>
+       )}
         <!-- /themify-link-item -->
-        <li class="social-link-item font-icon icon-medium">
-          <a href="#" aria-label="" target="_blank" rel="noopener"
+      
+        <!-- /themify-link-item -->
+        {youtube&&(
+          <li class="social-link-item font-icon icon-medium">
+          <a href={`https://youtube.com/${youtube}`} aria-label="" target="_blank" rel="noopener"
             ><em
               ><svg
                 aria-label=""
@@ -55,6 +68,7 @@
             >
           </a>
         </li>
+        )}
         <!-- /themify-link-item -->
       </ul>
     </div>
