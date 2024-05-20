@@ -1,21 +1,8 @@
 ---
-const page = {
-  	title:"Pondok Pesantren Kanzul Ulum &#8211; Pengurus Ponpes Kanzul Ulum Cirebon &#8211; Jawa Barat",
-	meta:{
-		name:"ponpes kanzul ulum jatibarang, pondok pesantren kanzul ulum, pondok pesantren kanzul ulum jatibarang brebes, pondok pesantren kanzul ulum jatibarang, pondok pesantren kanzul ulum brebes, pondok pesantren di brebes, ponpes brebes, pengurus pondok pesantren kanzul ulum",
-		description:"Pondok Pesantren Kanzul Ulum Cirebon - Jawa Barat, Hub. 08********"
-	}
-}
 
-const contact = {
-	whatapp : "0891111",
-	phone: "0891234"
-}
 
-const company={
-	name:"Pondok Pesantren Kanzul Ulum",
-	shortAddress:"Pondok Pesantren Kanzul Ulum | Cirebon Jawa Barat"
-}
+import {contact,company} from "../data/site-data.json"
+
 import Layout from "./layouts/default.astro"
 import FloatingToolbarButton from "./sections/floating-toolbar-button.astro"
 import Footer from "./sections/footer.astro"
@@ -25,23 +12,32 @@ import SearchLightBox from "./sections/search-light-box.astro"
 
 import "../styles/homepage.css"
 
+const page = {
+  title:`${company.name} Pengurus ${company.shortAddress}`,
+  meta: {
+    name: "ponpes kanzul ulum jatibarang, pondok pesantren kanzul ulum, pondok pesantren kanzul ulum jatibarang brebes, pondok pesantren kanzul ulum jatibarang, pondok pesantren kanzul ulum brebes, pondok pesantren di brebes, ponpes brebes, pengurus pondok pesantren kanzul ulum",
+    description:
+      `${company.shortAddress} Hub. ${contact.phone}`,
+  },
+}
 ---
+
 <Layout page={page}>
   <!-- hook content: themify_body_start -->
-    
-  <FloatingToolbarButton contact={contact}/>
-  <!-- /hook content: themify_body_start -->
- <SearchLightBox/>
- <div id="pagewrap" class="tf_box hfeed site">
-  <a class="screen-reader-text skip-to-content" href="#content"
-    >Skip to content</a
-  >
-  <Header company={company} />
 
-  <HomepageMainContent/>
-  <Footer company={company}/>
-</div><!-- /#pagewrap -->
- <!-- wp_footer -->
+  <FloatingToolbarButton contact={contact} />
+  <!-- /hook content: themify_body_start -->
+  <SearchLightBox />
+  <div id="pagewrap" class="tf_box hfeed site">
+    <a class="screen-reader-text skip-to-content" href="#content"
+      >Skip to content</a
+    >
+    <Header company={company} />
+
+    <HomepageMainContent />
+    <Footer company={company} />
+  </div><!-- /#pagewrap -->
+  <!-- wp_footer -->
   <script type="text/javascript">
     function revslider_showDoubleJqueryError(sliderID) {
       var errorMessage =
@@ -69,8 +65,7 @@ import "../styles/homepage.css"
       infiniteEnable: "0",
     }
     var tbLocalScript = {
-      builder_url:
-        "wp-content/themes/themify-ultra/themify/themify-builder",
+      builder_url: "wp-content/themes/themify-ultra/themify/themify-builder",
       css_module_url:
         "wp-content/themes/themify-ultra/themify/themify-builder/css/modules/",
       js_module_url:
@@ -114,10 +109,8 @@ import "../styles/homepage.css"
       version: "5.3.5",
       url: "wp-content/themes/themify-ultra/themify",
       wp: "6.4.3",
-      ajax_url:
-        "wp-admin/admin-ajax.php",
-      includesURL:
-        "wp-includes/",
+      ajax_url: "wp-admin/admin-ajax.php",
+      includesURL: "wp-includes/",
       emailSub: "Check this out!",
       lightbox: { i18n: { tCounter: "%curr% of %total%" } },
       s_v: "5.3.8",
@@ -163,13 +156,10 @@ import "../styles/homepage.css"
       },
       lz: "1",
       is_min: "1",
-      wp_embed:
-        "wp-includes/js/wp-embed.min.js",
-      theme_js:
-        "wp-content/themes/themify-ultra/js/themify.script.min.js",
+      wp_embed: "wp-includes/js/wp-embed.min.js",
+      theme_js: "wp-content/themes/themify-ultra/js/themify.script.min.js",
       theme_v: "5.3.5",
-      theme_url:
-        "wp-content/themes/themify-ultra",
+      theme_url: "wp-content/themes/themify-ultra",
       menu_point: "680",
       done: {
         tb_parallax: true,
@@ -283,11 +273,7 @@ import "../styles/homepage.css"
     href="wp-content/themes/themify-ultra/themify/js/modules/jquery.imagesloaded.min.js"
     as="script"
   />
-  <link
-    rel="preload"
-    href="/assets/images/logo/logo.png"
-    as="image"
-  />
+  <link rel="preload" href="/assets/images/logo/logo.png" as="image" />
 
   <link
     rel="preload"

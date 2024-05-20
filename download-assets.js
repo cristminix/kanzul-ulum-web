@@ -75,7 +75,8 @@ const js_modules={
     xx:"wp-content/themes/themify-ultra/themify/js/modules/swiper/modules/autoplay.min.js",
     yy:"wp-content/themes/themify-ultra/themify/themify-builder/css/modules/sliders/carousel.css",
     zz:"wp-content/themes/themify-ultra/themify/themify-builder/css/modules/sliders/slider.css",
-    ii:"wp-content/themes/themify-ultra/themify/js/modules/jquery.isotope.min.js"
+    ii:"wp-content/themes/themify-ultra/themify/js/modules/jquery.isotope.min.js",
+    jj:"wp-content/themes/themify-ultra/themify/themify-builder/css/modules/responsive-column.css"
   }
   const main = async()=>{
     const sources = [js_modules,js_modules2,css_modules]

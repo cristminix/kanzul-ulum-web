@@ -259,3 +259,7 @@ div.tf_audio_lazy audio {
       }
 /* END INLINE STYLE 04 */
       
+#main-nav-wrap #main-nav .current_page_item > a,
+#main-nav-wrap #main-nav  a:hover{
+  border-radius: 4px;
+}

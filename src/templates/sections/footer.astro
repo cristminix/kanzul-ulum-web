@@ -38,7 +38,7 @@ const {company} = Astro.props;
       <div class="section-col tf_clearfix">
         <div class="footer-widgets-wrap">
           <div class="footer-widgets tf_clearfix">
-            <FooterFullCompanyAddress/>
+            <FooterFullCompanyAddress address={company.address}/>
             <FooterContactPersonListWithCompanyEmail/>
           </div>
           <!-- /.footer-widgets -->

@@ -1,3 +1,6 @@
+---
+const {address}=Astro.props
+---
 <div class="col4-2 first tf_box tf_float">
     <div id="text-1007" class="widget widget_text">
       <h4 class="widgettitle">Alamat</h4>
@@ -5,7 +8,7 @@
         <div
           style="background: url('/assets/images/icon-office.png') no-repeat 0 5px; padding: 5px 0 0 30px;"
         >
-          Jl. XXX
+          {address}
         </div>
       </div>
     </div>
