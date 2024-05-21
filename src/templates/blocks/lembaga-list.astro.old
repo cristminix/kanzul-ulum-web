@@ -1,0 +1,273 @@
+<!-- module_row -->
+<div data-css_id="labl279" data-lazy="1" class="module_row themify_builder_row fullwidth tb_labl279 tf_clearfix">
+  <div class="row_inner col_align_top tf_box tf_w tf_rel">
+    <div data-lazy="1" class="module_column tb-column col-full first tb_r1kz280 tf_box">
+      <div class="tb-column-inner tf_box tf_w">
+        <!-- module image -->
+        <div class="module module-image tb_1arj280 image-center tf_mw hide-tablet hide-tablet_landscape hide-mobile"
+          data-lazy="1">
+          <div class="image-wrap tf_rel tf_mw">
+            <img decoding="async" src="/assets/images/sub1.png" width="1366" height="220" title="Home" alt="Home" />
+          </div>
+          <!-- /image-wrap -->
+        </div>
+        <!-- /module image --><!-- module image -->
+        <div class="module module-image tb_43y4281 image-center tf_mw hide-desktop" data-lazy="1">
+          <div class="image-wrap tf_rel tf_mw">
+            <img decoding="async" src="/assets/images/sub2.png" width="720" height="220" title="Home" alt="Home" />
+          </div>
+          <!-- /image-wrap -->
+        </div>
+        <!-- /module image -->
+      </div>
+    </div>
+  </div>
+  <!-- /row_inner -->
+</div>
+<!-- /module_row -->
+<!-- module_row -->
+<div data-css_id="pb2u876" data-lazy="1" class="module_row themify_builder_row repeat fullwidth tb_pb2u876 tf_clearfix">
+  <div class="row_inner col_align_top gutter-none tf_box tf_w tf_rel" data-basecol="3"
+    data-col_tablet="column4-1-4-2-4-1" data-col_tablet_landscape="column4-1-4-2-4-1"
+    data-col_mobile="column4-1-4-2-4-1">
+    <div data-lazy="1" class="module_column tb-column col4-1 first tb_nsrj877 tf_box">
+    </div>
+    <div data-lazy="1" class="module_column tb-column col4-2 middle tb_0jrp877 repeat tf_box">
+      <div class="tb-column-inner tf_box tf_w">
+        <!-- module plain text -->
+        <div class="module module-plain-text tb_8ekf877 hide-tablet hide-tablet_landscape hide-mobile" data-lazy="1">
+          <div class="tb_text_wrap">
+            <h6><b>Pendidikan</b></h6>
+          </div>
+        </div>
+        <!-- /module plain text --><!-- module plain text -->
+        <div class="module module-plain-text tb_u8uu878 hide-desktop" data-lazy="1">
+          <div class="tb_text_wrap">
+            <h6 style="font-size: 11px"><b>Pendidikan</b></h6>
+          </div>
+        </div>
+        <!-- /module plain text -->
+      </div>
+    </div>
+    <div data-lazy="1" class="module_column tb-column col4-1 last tb_p5g1879 tf_box">
+    </div>
+  </div>
+  <!-- /row_inner -->
+</div>
+<!-- /module_row -->
+<!-- module_row -->
+<div data-lazy="1"
+  class="module_row themify_builder_row tb_0azu289 tf_clearfix hide-tablet hide-tablet_landscape hide-mobile">
+  <div class="row_inner col_align_middle gutter-narrow tf_box tf_w tf_rel">
+    <div data-lazy="1" class="module_column tb-column col5-1 first tb_j8da291 tf_box">
+      <div class="tb-column-inner tf_box tf_w">
+        <!-- module image -->
+        <div class="module module-image tb_fdg1191 image-center tf_mw" data-lazy="1">
+          <div class="image-wrap tf_rel tf_mw">
+            <img decoding="async" src="/assets/images/bg-gray.png" width="191" height="190" alt="(Setara SMP/MTs)" />
+          </div>
+          <!-- /image-wrap -->
+
+          <div class="image-content">
+            <div class="image-caption tb_text_wrap">
+              (Setara SMP/MTs)
+            </div>
+            <!-- /image-caption -->
+          </div>
+          <!-- /image-content -->
+        </div>
+        <!-- /module image -->
+      </div>
+    </div>
+    <div data-lazy="1" class="module_column tb-column col5-1 second tb_d012123 tf_box">
+      <div class="tb-column-inner tf_box tf_w">
+        <!-- module image -->
+        <div class="module module-image tb_sgqr124 image-center tf_mw" data-lazy="1">
+          <div class="image-wrap tf_rel tf_mw">
+            <img decoding="async" src="/assets/images/bg-gray.png" width="191" height="190" alt="(Setara SMA/MA)" />
+          </div>
+          <!-- /image-wrap -->
+
+          <div class="image-content">
+            <div class="image-caption tb_text_wrap">
+              (Setara SMA/MA)
+            </div>
+            <!-- /image-caption -->
+          </div>
+          <!-- /image-content -->
+        </div>
+        <!-- /module image -->
+      </div>
+    </div>
+    <div data-lazy="1" class="module_column tb-column col5-1 third tb_9k0h333 tf_box">
+      <div class="tb-column-inner tf_box tf_w">
+        <!-- module image -->
+        <div class="module module-image tb_qgtn334 image-center tf_mw" data-lazy="1">
+          <div class="image-wrap tf_rel tf_mw">
+            <img decoding="async" src="/assets/images/bg-gray.png" width="191" height="190" title="Home" alt="Home" />
+          </div>
+          <!-- /image-wrap -->
+        </div>
+        <!-- /module image -->
+      </div>
+    </div>
+    <div data-lazy="1" class="module_column tb-column col5-1 fourth tb_ecja151 tf_box">
+      <div class="tb-column-inner tf_box tf_w">
+        <!-- module image -->
+        <div class="module module-image tb_ejv0151 image-center tf_mw" data-lazy="1">
+          <div class="image-wrap tf_rel tf_mw">
+            <img decoding="async" src="/assets/images/bg-gray.png" width="191" height="190" title="Home" alt="Home" />
+          </div>
+          <!-- /image-wrap -->
+        </div>
+        <!-- /module image -->
+      </div>
+    </div>
+    <div data-lazy="1" class="module_column tb-column col5-1 last tb_ge8k88 tf_box">
+      <div class="tb-column-inner tf_box tf_w">
+        <!-- module image -->
+        <div class="module module-image tb_7cua90 image-center tf_mw" data-lazy="1">
+          <div class="image-wrap tf_rel tf_mw">
+            <img decoding="async" src="/assets/images/bg-gray.png" width="191" height="190" title="Home" alt="Home" />
+          </div>
+          <!-- /image-wrap -->
+        </div>
+        <!-- /module image -->
+      </div>
+    </div>
+  </div>
+  <!-- /row_inner -->
+</div>
+<!-- /module_row -->
+<!-- module_row -->
+<div data-lazy="1" class="module_row themify_builder_row tb_8jgp943 tf_clearfix hide-desktop">
+  <div class="row_inner col_align_top tf_box tf_w tf_rel">
+    <div data-lazy="1" class="module_column tb-column col-full first tb_q1e8944 tf_box">
+      <div class="tb-column-inner tf_box tf_w">
+        <!-- module plain text -->
+        <div class="module module-plain-text tb_q6zv945" data-lazy="1">
+          <div class="tb_text_wrap">
+            <h5 style="font-size: 17px">
+              <b>Lembaga Pendidikan Salafiyah<br />(Non
+                Formal)</b>
+            </h5>
+          </div>
+        </div>
+        <!-- /module plain text -->
+        <div data-lazy="1" class="module_subrow themify_builder_sub_row tb_w5l8945 tf_w tf_clearfix">
+          <div class="subrow_inner col_align_top tf_box tf_w" data-basecol="3" data-col_tablet="column3-1"
+            data-col_tablet_landscape="column3-1" data-col_mobile="column3-1">
+            <div data-lazy="1" class="sub_column module_column tf_box col3-1 first tb_2zat946">
+              <div class="tb-column-inner tf_box tf_w">
+                <!-- module image -->
+                <div class="module module-image tb_k7f9946 image-center tf_mw" data-lazy="1">
+                  <div class="image-wrap tf_rel tf_mw">
+                    <img decoding="async" src="/assets/images/kelas-idadi.png" width="191" height="190" title="Home"
+                      alt="Home" />
+                  </div>
+                  <!-- /image-wrap -->
+                </div>
+                <!-- /module image -->
+              </div>
+            </div>
+            <div data-lazy="1" class="sub_column module_column tf_box col3-1 middle tb_42mc947">
+              <div class="tb-column-inner tf_box tf_w">
+                <!-- module image -->
+                <div class="module module-image tb_2bmc947 image-center tf_mw" data-lazy="1">
+                  <div class="image-wrap tf_rel tf_mw">
+                    <img decoding="async" src="/assets/images/kelas-tsanawiyah.png" width="191" height="190"
+                      title="Home" alt="Home" />
+                  </div>
+                  <!-- /image-wrap -->
+                </div>
+                <!-- /module image -->
+              </div>
+            </div>
+            <div data-lazy="1" class="sub_column module_column tf_box col3-1 last tb_oy9m923">
+              <div class="tb-column-inner tf_box tf_w">
+                <!-- module image -->
+                <div class="module module-image tb_hjul419 image-center tf_mw" data-lazy="1">
+                  <div class="image-wrap tf_rel tf_mw">
+                    <img decoding="async" src="/assets/images/kelas-aliyah.png" width="191" height="190" title="Home"
+                      alt="Home" />
+                  </div>
+                  <!-- /image-wrap -->
+                </div>
+                <!-- /module image -->
+              </div>
+            </div>
+          </div>
+        </div><!-- /themify_builder_sub_row -->
+      </div>
+    </div>
+  </div>
+  <!-- /row_inner -->
+</div>
+<!-- /module_row -->
+<!-- module_row -->
+<div data-lazy="1" class="module_row themify_builder_row tb_a5yf83 tf_clearfix hide-desktop">
+  <div class="row_inner col_align_top tf_box tf_w tf_rel">
+    <div data-lazy="1" class="module_column tb-column col-full first tb_mkt984 tf_box">
+      <div class="tb-column-inner tf_box tf_w">
+        <!-- module plain text -->
+        <div class="module module-plain-text tb_egs7659" data-lazy="1">
+          <div class="tb_text_wrap">
+            <h5 style="font-size: 17px">
+              <b>Lembaga Pendidikan Kesetaraan (Formal)</b>
+            </h5>
+          </div>
+        </div>
+        <!-- /module plain text -->
+        <div data-lazy="1" class="module_subrow themify_builder_sub_row tb_l49k744 tf_w tf_clearfix">
+          <div class="subrow_inner col_align_top tf_box tf_w" data-basecol="2" data-col_tablet="column4-2"
+            data-col_tablet_landscape="column4-2" data-col_mobile="column4-2">
+            <div data-lazy="1" class="sub_column module_column tf_box col2-1 first tb_aiii745">
+              <div class="tb-column-inner tf_box tf_w">
+                <!-- module image -->
+                <div class="module module-image tb_5cs6325 image-center tf_mw" data-lazy="1">
+                  <div class="image-wrap tf_rel tf_mw">
+                    <img decoding="async" src="/assets/images/tingkat-wustha.png" width="191" height="190"
+                      alt="(Setara SMP/MTs)" />
+                  </div>
+                  <!-- /image-wrap -->
+
+                  <div class="image-content">
+                    <div class="image-caption tb_text_wrap">
+                      (Setara SMP/MTs)
+                    </div>
+                    <!-- /image-caption -->
+                  </div>
+                  <!-- /image-content -->
+                </div>
+                <!-- /module image -->
+              </div>
+            </div>
+            <div data-lazy="1" class="sub_column module_column tf_box col2-1 last tb_7j2c745">
+              <div class="tb-column-inner tf_box tf_w">
+                <!-- module image -->
+                <div class="module module-image tb_fk7q388 image-center tf_mw" data-lazy="1">
+                  <div class="image-wrap tf_rel tf_mw">
+                    <img decoding="async" src="/assets/images/tingkat-ulya.png" width="191" height="190"
+                      alt="(Setara SMA/MA)" />
+                  </div>
+                  <!-- /image-wrap -->
+
+                  <div class="image-content">
+                    <div class="image-caption tb_text_wrap">
+                      (Setara SMA/MA)
+                    </div>
+                    <!-- /image-caption -->
+                  </div>
+                  <!-- /image-content -->
+                </div>
+                <!-- /module image -->
+              </div>
+            </div>
+          </div>
+        </div><!-- /themify_builder_sub_row -->
+      </div>
+    </div>
+  </div>
+  <!-- /row_inner -->
+</div>
+<!-- /module_row -->
