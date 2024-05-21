@@ -63,13 +63,13 @@ const { galery } = Astro.props;
 
              {
               galery.list.map((item,index)=>{
-                return (<div class="tf_swiper-slide" key={index}>
+                return (<div class="tf_swiper-slide " key={index}>
                <div
                  class="slide-inner-wrap"
                  style="margin-left:5px;margin-right:5px;"
                >
-                 <div class="tf_rel tf_lazy slide-image">
-                   <a
+                 <div class="tf_rel tf_lazy slide-image ">
+                   <a class="themify_lightbox"
                      href={item.image}
                    >
                      <img

@@ -24,8 +24,8 @@ img {
 
 .tf_fa {
   display: inline-block;
-  width: 1em;
-  height: 1em;
+  width: 18px;
+  height: 18px;
   stroke-width: 0;
   stroke: currentColor;
   overflow: visible;
