@@ -1,9 +1,10 @@
-import fs from "fs";
-import cp from 'child_process'
-import path from 'path'
-let download = async function(uri, filename){
-    let command = `curl -o ${filename}  ${uri}`;
-    let result = cp.execSync(command);
+import fs from "node:fs";
+import cp from 'node:child_process'
+import path from 'node:path'
+// biome-ignore lint/complexity/useArrowFunction: <explanation>
+const download = async function(uri, filename){
+    const command = `curl -o ${filename}  ${uri}`;
+    const result = cp.execSync(command);
 };
 
 const js_modules={
