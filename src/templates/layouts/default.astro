@@ -1,5 +1,5 @@
 ---
-      const { page } = Astro.props
+const { page } = Astro.props;
 ---
 <!doctype html>
 <html lang="id">
@@ -9,6 +9,25 @@
   {page.title}
 </title>
 <meta name="robots" content="max-image-preview:large" />
+<style is:global >
+#footerwrap,
+#pagewrap #headerwrap.fixed-header,
+.transparent-header #pagewrap #headerwrap.fixed-header ,
+.themify_builder_content-71 
+{
+   /* -webkit-backdrop-filter: blur(15px);
+     backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.3) !important;  */
+  }
+.tb_0jrp877.module_column{
+  /*-webkit-backdrop-filter: blur(15px) !important;
+    backdrop-filter: blur(15px) !important;
+    background-color: rgba(255, 255, 255, 0.5) !important;  */
+}
+.search-button{
+  background: none !important;
+}
+</style>
 <noscript>
 
   <style>

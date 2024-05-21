@@ -1,15 +1,15 @@
 ---
-import { contact, company, contact_person } from "../data/site-data.json";
-import berita from "../data/berita.json";
-import galery from "../data/galery.json";
-import Layout from "./layouts/default.astro";
-import FloatingToolbarButton from "./sections/floating-toolbar-button.astro";
-import Footer from "./sections/footer.astro";
-import Header from "./sections/header.astro";
-import HomepageMainContent from "./sections/homepage-main-content.astro";
-import SearchLightBox from "./sections/search-light-box.astro";
+import { contact, company, contact_person } from "../../data/site-data.json";
+import berita from "../../data/berita.json";
+import galery from "../../data/galery.json";
+import Layout from "./default.astro";
+import FloatingToolbarButton from "../sections/floating-toolbar-button.astro";
+import Footer from "../sections/footer.astro";
+import Header from "../sections/header.astro";
+import HomepageMainContent from "../sections/homepage-main-content.astro";
+import SearchLightBox from "../sections/search-light-box.astro";
 
-import "../styles/homepage.css";
+import "../../styles/homepage.css";
 
 const page = {
 	title: `${company.name} Pengurus ${company.shortAddress}`,
@@ -30,7 +30,6 @@ const page = {
     <a class="screen-reader-text skip-to-content" href="#content">Skip to content</a>
     <Header company={company} />
 
-    <HomepageMainContent berita={berita} galery={galery}/>
     <Footer company={company} cp={contact_person} />
   </div><!-- /#pagewrap -->
   <!-- wp_footer -->

@@ -4,8 +4,14 @@ import MainWebMenubar from "../blocks/main-web-menubar.astro";
 import MainMenuButtonIcon from "../blocks/main-menu-button-icon.astro";
 import TopBar from "./top-bar.astro";
 
-const {company} = Astro.props;
+const { company } = Astro.props;
 ---
+<style>
+  #headerwrap{
+    /* filter: blur(4px); */
+    /* @apply backdrop-blur-sm; */
+  }
+</style>
 <div id="headerwrap" class="tf_box tf_w">
     <TopBar company={company}/>
     <!-- /header-widgets -->
@@ -13,7 +19,7 @@ const {company} = Astro.props;
 
     <header
       id="header"
-      class="tf_box pagewidth tf_clearfix"
+      class="tf_box pagewidth tf_clearfix "
       itemscope="itemscope"
       itemtype="https://schema.org/WPHeader"
     >

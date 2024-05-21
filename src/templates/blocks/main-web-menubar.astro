@@ -1,87 +1,68 @@
 ---
 import MainMenuSearchButton from "./main-menu-search-button.astro";
+const pathname = new URL(Astro.request.url).pathname;
+const currentPath = pathname.slice(1); // remove the first "/"
+console.log(currentPath);
+
+const webMenu = {
+	list: [
+		{ title: "Home", path: "/" },
+		{ title: "Profil", path: "/profil" },
+		{ title: "Lembaga", path: "/lembaga" },
+		{ title: "Kegiatan", path: "/kegiatan" },
+		{ title: "Pendaftaran", path: "/pendaftaran" },
+		{ title: "Galeri", path: "/galeri" },
+		{ title: "Berita", path: "/berita" },
+	],
+};
 ---
 
 <div id="mobile-menu" class="sidemenu sidemenu-off tf_scrollbar">
-    <div class="navbar-wrapper tf_clearfix">
-      <MainMenuSearchButton/>
-      <nav
-        id="main-nav-wrap"
-        itemscope="itemscope"
-        itemtype="https://schema.org/SiteNavigationElement"
-      >
-        <ul id="main-nav" class="main-nav tf_clearfix tf_box">
-          <li
-            class="current-menu-item menu-item-page-71 current_page_item menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-129"
-          >
-            <a href="/">Home</a>
-          </li>
-          <li
-            class="menu-item-page-67 menu-item menu-item-type-post_type menu-item-object-page menu-item-135"
-          >
-            <a
-              href="/profil"
-              >Profil</a
-            >
-          </li>
-          <li
-            class="menu-item-page-37 menu-item menu-item-type-post_type menu-item-object-page menu-item-145"
-          >
-            <a
-              href="/lembaga"
-              >Lembaga</a
-            >
-          </li>
-          <li
-            class="menu-item-page-38 menu-item menu-item-type-post_type menu-item-object-page menu-item-132"
-          >
-            <a
-              href="/kegiatan"
-              >Kegiatan</a
-            >
-          </li>
-          <li
-            class="menu-item-page-40 menu-item menu-item-type-post_type menu-item-object-page menu-item-134"
-          >
-            <a
-              href="/pendaftaran"
-              >Pendaftaran</a
-            >
-          </li>
-          <li
-            class="menu-item-page-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-131"
-          >
-            <a
-              href="/galeri"
-              >Galeri</a
-            >
-          </li>
-          <li
-            class="menu-item-page-39 menu-item menu-item-type-post_type menu-item-object-page menu-item-130"
-          >
-            <a
-              href="/berita"
-              >Berita</a
-            >
-          </li>
-          <li
-            class="menu-item-page-70 menu-item menu-item-type-post_type menu-item-object-page page_item page-item-70 menu-item-133"
-          >
-            <a
-              href="/kontak"
-              >Kontak</a
-            >
-          </li>
-        </ul>
+  <div class="navbar-wrapper tf_clearfix">
+      <MainMenuSearchButton />
+      <nav id="main-nav-wrap" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement">
+          <ul id="main-nav" class="main-nav tf_clearfix tf_box">
+            {webMenu.list.map((menu,index)=>{
+                const slug = menu.title.toLocaleLowerCase()
+                const menuCls='menu-item menu-item-type-post_type menu-item-object-page '
+                const activeMenuCls = `current-menu-item current_page_item menu-item menu-item-type-post_type menu-item-object-page`
+                const selectedCls = pathname == menu.path ? activeMenuCls:menuCls
+             return (<li key={index} class={`menu-item-page-${index}  menu-item-${slug} menu-item-${index} ${selectedCls}`}>
+                  <a href={menu.path}>{menu.title}</a>
+              </li>)
+            })}
+              <!-- <li
+                  class="current-menu-item menu-item-page-71 current_page_item menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-129">
+                  <a href="/">Home</a>
+              </li>
+              <li class="menu-item-page-67 menu-item menu-item-type-post_type menu-item-object-page menu-item-135">
+                  <a href="/profil">Profil</a>
+              </li>
+              <li class="menu-item-page-37 menu-item menu-item-type-post_type menu-item-object-page menu-item-145">
+                  <a href="/lembaga">Lembaga</a>
+              </li>
+              <li class="menu-item-page-38 menu-item menu-item-type-post_type menu-item-object-page menu-item-132">
+                  <a href="/kegiatan">Kegiatan</a>
+              </li>
+              <li class="menu-item-page-40 menu-item menu-item-type-post_type menu-item-object-page menu-item-134">
+                  <a href="/pendaftaran">Pendaftaran</a>
+              </li>
+              <li class="menu-item-page-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-131">
+                  <a href="/galeri">Galeri</a>
+              </li>
+              <li class="menu-item-page-39 menu-item menu-item-type-post_type menu-item-object-page menu-item-130">
+                  <a href="/berita">Berita</a>
+              </li>
+              <li
+                  class="menu-item-page-70 menu-item menu-item-type-post_type menu-item-object-page page_item page-item-70 menu-item-133">
+                  <a href="/kontak">Kontak</a>
+              </li> -->
+          </ul>
       </nav>
       <!-- /#main-nav-wrap -->
-    </div>
+  </div>
 
-    <a
-      id="menu-icon-close"
-      aria-label="Close menu"
-      class="tf_close tf_hide"
-      href="#"><span class="screen-reader-text">Close Menu</span></a
-    >
-  </div><!-- #mobile-menu -->
-  <!-- /#mobile-menu -->
+  <a id="menu-icon-close" aria-label="Close menu" class="tf_close tf_hide" href="#"><span
+          class="screen-reader-text">Close Menu</span></a>
+</div><!-- #mobile-menu -->
+<!-- /#mobile-menu -->
