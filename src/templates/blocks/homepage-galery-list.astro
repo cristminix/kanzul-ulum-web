@@ -1,4 +1,7 @@
- <!-- module_row -->
+---
+const { galery } = Astro.props;
+---
+<!-- module_row -->
  <div
  data-lazy="1"
  class="module_row themify_builder_row tb_ek1b456 tf_clearfix"
@@ -58,279 +61,31 @@
            >
              <!-- module slider image -->
 
-             <div class="tf_swiper-slide">
+             {
+              galery.list.map((item,index)=>{
+                return (<div class="tf_swiper-slide" key={index}>
                <div
                  class="slide-inner-wrap"
                  style="margin-left:5px;margin-right:5px;"
                >
                  <div class="tf_rel tf_lazy slide-image">
                    <a
-                     href="/assets/images/galery/croped/galery-item-01.jpg"
+                     href={item.image}
                    >
                      <img
                        decoding="async"
-                       src="/assets/images/galery/croped/galery-item-01.jpg"
+                       src={item.image}
                        width="600"
                        height="400"
-                       title="Home"
-                       alt="Home"
+                       title={item.description}
+                       alt={item.name}
                      />
                    </a>
                  </div><!-- /slide-image -->
                </div>
-             </div>
-             <div class="tf_swiper-slide">
-               <div
-                 class="slide-inner-wrap"
-                 style="margin-left:5px;margin-right:5px;"
-               >
-                 <div class="tf_rel tf_lazy slide-image">
-                   <a
-                     href="/assets/images/galery/croped/galery-item-06.jpg"
-                   >
-                     <img
-                       decoding="async"
-                       src="/assets/images/galery/croped/galery-item-06.jpg"
-                       width="600"
-                       height="400"
-                       title="Home"
-                       alt="Home"
-                     />
-                   </a>
-                 </div><!-- /slide-image -->
-               </div>
-             </div>
-             <div class="tf_swiper-slide">
-               <div
-                 class="slide-inner-wrap"
-                 style="margin-left:5px;margin-right:5px;"
-               >
-                 <div class="tf_rel tf_lazy slide-image">
-                   <a
-                     href="/assets/images/galery/croped/galery-item-05.jpg"
-                   >
-                     <img
-                       decoding="async"
-                       src="/assets/images/galery/croped/galery-item-05.jpg"
-                       width="600"
-                       height="400"
-                       title="Home"
-                       alt="Home"
-                     />
-                   </a>
-                 </div><!-- /slide-image -->
-               </div>
-             </div>
-             <div class="tf_swiper-slide">
-               <div
-                 class="slide-inner-wrap"
-                 style="margin-left:5px;margin-right:5px;"
-               >
-                 <div class="tf_rel tf_lazy slide-image">
-                   <a
-                     href="/assets/images/galery/croped/galery-item-04.jpg"
-                   >
-                     <img
-                       decoding="async"
-                       src="/assets/images/galery/croped/galery-item-04.jpg"
-                       width="600"
-                       height="400"
-                       title="Home"
-                       alt="Home"
-                     />
-                   </a>
-                 </div><!-- /slide-image -->
-               </div>
-             </div>
-             <div class="tf_swiper-slide">
-               <div
-                 class="slide-inner-wrap"
-                 style="margin-left:5px;margin-right:5px;"
-               >
-                 <div class="tf_rel tf_lazy slide-image">
-                   <a
-                     href="/assets/images/galery/croped/galery-item-03.jpg"
-                   >
-                     <img
-                       decoding="async"
-                       src="/assets/images/galery/croped/galery-item-03.jpg"
-                       width="600"
-                       height="400"
-                       title="Home"
-                       alt="Home"
-                     />
-                   </a>
-                 </div><!-- /slide-image -->
-               </div>
-             </div>
-             <div class="tf_swiper-slide">
-               <div
-                 class="slide-inner-wrap"
-                 style="margin-left:5px;margin-right:5px;"
-               >
-                 <div class="tf_rel tf_lazy slide-image">
-                   <a
-                     href="/assets/images/galery/croped/galery-item-02.jpg"
-                   >
-                     <img
-                       decoding="async"
-                       src="/assets/images/galery/croped/galery-item-02.jpg"
-                       width="600"
-                       height="400"
-                       title="Home"
-                       alt="Home"
-                     />
-                   </a>
-                 </div><!-- /slide-image -->
-               </div>
-             </div>
-             <div class="tf_swiper-slide">
-               <div
-                 class="slide-inner-wrap"
-                 style="margin-left:5px;margin-right:5px;"
-               >
-                 <div class="tf_rel tf_lazy slide-image">
-                   <a
-                     href="/assets/images/galery/croped/galery-item-14.jpg"
-                   >
-                     <img
-                       decoding="async"
-                       src="/assets/images/galery/croped/galery-item-14.jpg"
-                       width="600"
-                       height="400"
-                       title="Home"
-                       alt="Home"
-                     />
-                   </a>
-                 </div><!-- /slide-image -->
-               </div>
-             </div>
-             <div class="tf_swiper-slide">
-               <div
-                 class="slide-inner-wrap"
-                 style="margin-left:5px;margin-right:5px;"
-               >
-                 <div class="tf_rel tf_lazy slide-image">
-                   <a
-                     href="/assets/images/galery/croped/galery-item-10.jpg"
-                   >
-                     <img
-                       decoding="async"
-                       src="/assets/images/galery/croped/galery-item-10.jpg"
-                       width="600"
-                       height="400"
-                       title="Home"
-                       alt="Home"
-                     />
-                   </a>
-                 </div><!-- /slide-image -->
-               </div>
-             </div>
-             <div class="tf_swiper-slide">
-               <div
-                 class="slide-inner-wrap"
-                 style="margin-left:5px;margin-right:5px;"
-               >
-                 <div class="tf_rel tf_lazy slide-image">
-                   <a
-                     href="/assets/images/galery/croped/galery-item-09.jpg"
-                   >
-                     <img
-                       decoding="async"
-                       src="/assets/images/galery/croped/galery-item-09.jpg"
-                       width="600"
-                       height="400"
-                       title="Home"
-                       alt="Home"
-                     />
-                   </a>
-                 </div><!-- /slide-image -->
-               </div>
-             </div>
-             <div class="tf_swiper-slide">
-               <div
-                 class="slide-inner-wrap"
-                 style="margin-left:5px;margin-right:5px;"
-               >
-                 <div class="tf_rel tf_lazy slide-image">
-                   <a
-                     href="/assets/images/galery/croped/galery-item-08.jpg"
-                   >
-                     <img
-                       decoding="async"
-                       src="/assets/images/galery/croped/galery-item-08.jpg"
-                       width="600"
-                       height="400"
-                       title="Home"
-                       alt="Home"
-                     />
-                   </a>
-                 </div><!-- /slide-image -->
-               </div>
-             </div>
-             <div class="tf_swiper-slide">
-               <div
-                 class="slide-inner-wrap"
-                 style="margin-left:5px;margin-right:5px;"
-               >
-                 <div class="tf_rel tf_lazy slide-image">
-                   <a
-                     href="/assets/images/galery/croped/galery-item-13.jpg"
-                   >
-                     <img
-                       decoding="async"
-                       src="/assets/images/galery/croped/galery-item-13.jpg"
-                       width="600"
-                       height="400"
-                       title="Home"
-                       alt="Home"
-                     />
-                   </a>
-                 </div><!-- /slide-image -->
-               </div>
-             </div>
-             <div class="tf_swiper-slide">
-               <div
-                 class="slide-inner-wrap"
-                 style="margin-left:5px;margin-right:5px;"
-               >
-                 <div class="tf_rel tf_lazy slide-image">
-                   <a
-                     href="/assets/images/galery/croped/galery-item-12.jpg"
-                   >
-                     <img
-                       decoding="async"
-                       src="/assets/images/galery/croped/galery-item-12.jpg"
-                       width="600"
-                       height="400"
-                       title="Home"
-                       alt="Home"
-                     />
-                   </a>
-                 </div><!-- /slide-image -->
-               </div>
-             </div>
-             <div class="tf_swiper-slide">
-               <div
-                 class="slide-inner-wrap"
-                 style="margin-left:5px;margin-right:5px;"
-               >
-                 <div class="tf_rel tf_lazy slide-image">
-                   <a
-                     href="/assets/images/galery/croped/galery-item-11.jpg"
-                   >
-                     <img
-                       decoding="async"
-                       src="/assets/images/galery/croped/galery-item-11.jpg"
-                       width="600"
-                       height="400"
-                       title="Home"
-                       alt="Home"
-                     />
-                   </a>
-                 </div><!-- /slide-image -->
-               </div>
-             </div>
+             </div>)
+              })
+             }
            </div>
          </div>
        </div>

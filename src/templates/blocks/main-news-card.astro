@@ -1,355 +1,113 @@
- <!-- module_row -->
- <div
- data-lazy="1"
- class="module_row themify_builder_row repeat tb_ilr1523 tf_clearfix"
->
- <div
-   class="row_inner col_align_top gutter-none tf_box tf_w tf_rel"
- >
-   <div
-     data-lazy="1"
-     class="module_column tb-column col4-2 first tb_yjlq525 tf_box"
-   >
-     <div class="tb-column-inner tf_box tf_w">
-       <!-- module icon -->
-       <div
-         class="module module-icon tb_xpmh66 xlarge squared icon_horizontal"
-         data-lazy="1"
-       >
-         <div class="module-icon-item tf_inline_b">
-           <em
-             class="ui tf_vmiddle tf_textc tf_box tb_default_color"
-             ><svg
-               aria-hidden="true"
-               class="tf_fa tf-far-newspaper"
-               ><use href="#tf-far-newspaper"></use></svg
-             ></em
-           >
-           <span class="tf_vmiddle"
-             ><b>Berita</b> Ponpes Kanzul Ulum</span
-           >
-         </div>
-       </div>
-       <!-- /module icon -->
-     </div>
-   </div>
-   <div
-     data-lazy="1"
-     class="module_column tb-column col4-2 last tb_l9a2972 tf_box"
-   >
-   </div>
- </div>
- <!-- /row_inner -->
+---
+const { berita } = Astro.props;
+---
+<!-- module_row -->
+<div data-lazy="1" class="module_row themify_builder_row repeat tb_ilr1523 tf_clearfix">
+  <div class="row_inner col_align_top gutter-none tf_box tf_w tf_rel">
+    <div data-lazy="1" class="module_column tb-column col4-2 first tb_yjlq525 tf_box">
+      <div class="tb-column-inner tf_box tf_w">
+        <!-- module icon -->
+        <div class="module module-icon tb_xpmh66 xlarge squared icon_horizontal" data-lazy="1">
+          <div class="module-icon-item tf_inline_b">
+            <em class="ui tf_vmiddle tf_textc tf_box tb_default_color"><svg aria-hidden="true"
+                class="tf_fa tf-far-newspaper">
+                <use href="#tf-far-newspaper"></use>
+              </svg></em>
+            <span class="tf_vmiddle"><b>Berita</b> Ponpes Kanzul Ulum</span>
+          </div>
+        </div>
+        <!-- /module icon -->
+      </div>
+    </div>
+    <div data-lazy="1" class="module_column tb-column col4-2 last tb_l9a2972 tf_box">
+    </div>
+  </div>
+  <!-- /row_inner -->
 </div>
 <!-- /module_row -->
 <!-- module_row -->
-<div
- data-lazy="1"
- class="module_row themify_builder_row repeat tb_64mw464 tf_clearfix"
->
- <div class="row_inner col_align_top tf_box tf_w tf_rel">
-   <div
-     data-lazy="1"
-     class="module_column tb-column col-full first tb_c9w1465 tf_box"
-   >
-     <div class="tb-column-inner tf_box tf_w">
-       <!-- module post -->
-       <div
-         class="module module-post tb_4j26391 hide-tablet hide-tablet_landscape hide-mobile"
-       >
-         <div
-           class="builder-posts-wrap loops-wrapper grid3 masonry classic tf_rel tf_clear tf_clearfix"
-           data-lazy="1"
-         >
-           <article
-             id="post-142"
-             class="post tf_clearfix post-142 type-post status-publish format-standard has-post-thumbnail hentry category-artikel tag-pentingnya-pendidikan-agama tag-pentingnya-pendidikan-agama-islam tag-pentingnya-pendidikan-agama-untuk-anak-usia-dini tag-pentingnya-pendidikan-agama-untuk-tumbuhkembang-anak tag-pondok-pesantren-kanzul ulum tag-pondok-pesantren-kanzul ulum-jatibarang-brebes tag-ponpes-kanzul ulum-jatibarang tag-sekolah-agama tag-sekolah-pendidikan-agama has-post-title has-post-date has-post-category no-post-tag has-post-comment has-post-author cat-5"
-           >
-             <a
-               href="pentingnya-pendidikan-agama-untuk-tumbuhkembang-anak/index.html"
-               aria-label="Pentingnya Pendidikan Agama untuk Tumbuhkembang Anak"
-               data-post-permalink="yes"
-               style="display: none;"></a>
-             <figure class="post-image tf_clearfix">
-               <a
-                 href="pentingnya-pendidikan-agama-untuk-tumbuhkembang-anak/index.html"
-               >
-                 <img
-                   decoding="async"
-                   src="/assets/images/berita/artikel1.jpg"
-                   width="600"
-                   height="350"
-                   title="Pentingnya Pendidikan Agama untuk Tumbuhkembang Anak"
-                   alt="Pentingnya Pendidikan Agama untuk Tumbuhkembang Anak"
-                 />
-               </a>
-             </figure>
-             <div class="post-content">
-               <div class="post-content-inner">
-                 <div
-                   class="post-date-wrap post-date-inline"
-                 >
-                   <time
-                     class="post-date entry-date updated"
-                     datetime="2021-11-24"
-                   >
-                     <span class="year"
-                       >November 24, 2021</span
-                     >
-                   </time>
-                 </div><!-- .post-date-wrap -->
+<div data-lazy="1" class="module_row themify_builder_row repeat tb_64mw464 tf_clearfix">
+  <div class="row_inner col_align_top tf_box tf_w tf_rel">
+    <div data-lazy="1" class="module_column tb-column col-full first tb_c9w1465 tf_box">
+      <div class="tb-column-inner tf_box tf_w">
+        <!-- module post -->
+        <div class="module module-post tb_4j26391 hide-tablet hide-tablet_landscape hide-mobile">
+          <div class="builder-posts-wrap loops-wrapper grid3 masonry classic tf_rel tf_clear tf_clearfix" data-lazy="1">
+            {berita.list.map((post,index)=>(
+              <article id={`post-${post.id}`} key={index}
+              class="post tf_clearfix post-142 type-post status-publish format-standard has-post-thumbnail hentry category-artikel tag-pentingnya-pendidikan-agama tag-pentingnya-pendidikan-agama-islam tag-pentingnya-pendidikan-agama-untuk-anak-usia-dini tag-pentingnya-pendidikan-agama-untuk-tumbuhkembang-anak tag-pondok-pesantren-kanzul ulum tag-pondok-pesantren-kanzul ulum-jatibarang-brebes tag-ponpes-kanzul ulum-jatibarang tag-sekolah-agama tag-sekolah-pendidikan-agama has-post-title has-post-date has-post-category no-post-tag has-post-comment has-post-author cat-5">
+              <a href={`/berita/${post.slug}-${post.id}`}
+                aria-label={`${post.title}`} data-post-permalink="yes"
+                style="display: none;"></a>
+              <figure class="post-image tf_clearfix">
+                <a href={`/berita/${post.slug}-${post.id}`}>
+                  <img decoding="async" src={post.cover} width="600" height="350"
+                    title={`${post.title}`} 
+                    alt={`${post.title}`}  />
+                </a>
+              </figure>
+              <div class="post-content">
+                <div class="post-content-inner">
+                  <div class="post-date-wrap post-date-inline">
+                    <time class="post-date entry-date updated" datetime={post.date} >
+                      <span class="year">{post.date}</span>
+                    </time>
+                  </div><!-- .post-date-wrap -->
 
-                 <h2 class="post-title entry-title">
-                   <a
-                     href="pentingnya-pendidikan-agama-untuk-tumbuhkembang-anak/index.html"
-                     >Pentingnya Pendidikan Agama untuk
-                     Tumbuhkembang Anak</a
-                   >
-                 </h2>
+                  <h2 class="post-title entry-title">
+                    <a href={`/berita/${post.slug}-${post.id}`}>
+                      {post.title}
+                    </a>
+                  </h2>
 
-                 <div class="entry-content">
-                 </div><!-- /.entry-content -->
-               </div>
-               <!-- /.post-content-inner -->
-             </div>
-             <!-- /.post-content -->
-           </article>
-           <!-- /.post -->
-           <article
-             id="post-137"
-             class="post tf_clearfix post-137 type-post status-publish format-standard has-post-thumbnail hentry category-artikel tag-pendiri-ponpes-kanzul ulum-jatibarang tag-pengurus-ponpes-kanzul ulum-jatibarang tag-pondok-pesantren-kanzul ulum tag-pondok-pesantren-kanzul ulum-jatibarang-brebes tag-ponpes-kanzul ulum-brebes tag-ponpes-kanzul ulum-jatibarang tag-ponpes-kanzul ulum-jatibarang-brebes has-post-title has-post-date has-post-category no-post-tag has-post-comment has-post-author cat-5"
-           >
-             <a
-               href="pondok-pesantren-kanzul ulum-jatibarang-brebes/index.html"
-               aria-label="Pondok Pesantren Darussalam Jatibarang Brebes"
-               data-post-permalink="yes"
-               style="display: none;"></a>
-             <figure class="post-image tf_clearfix">
-               <a
-                 href="pondok-pesantren-kanzul ulum-jatibarang-brebes/index.html"
-               >
-                 <img
-                   decoding="async"
-                   src="/assets/images/berita/artikel2.jpg"
-                   width="600"
-                   height="350"
-                   title="Pondok Pesantren Darussalam Jatibarang Brebes"
-                   alt="Pondok Pesantren Darussalam Jatibarang Brebes"
-                 />
-               </a>
-             </figure>
-             <div class="post-content">
-               <div class="post-content-inner">
-                 <div
-                   class="post-date-wrap post-date-inline"
-                 >
-                   <time
-                     class="post-date entry-date updated"
-                     datetime="2021-11-24"
-                   >
-                     <span class="year"
-                       >November 24, 2021</span
-                     >
-                   </time>
-                 </div><!-- .post-date-wrap -->
+                  <div class="entry-content">
+                  </div><!-- /.entry-content -->
+                </div>
+                <!-- /.post-content-inner -->
+              </div>
+              <!-- /.post-content -->
+            </article>
+            ))}
+          </div><!-- .builder-posts-wrap -->
+        </div>
+        <!-- /module post -->
+        <div class="module tf_clearfix themify_builder_slider_wrap module-slider tb_ljxi486 slider-default hide-desktop"
+          data-lazy="1">
+          <div class="themify_builder_slider tf_carousel tf_swiper-container tf_rel tf_overflow" data-lazy="1"
+            data-tbreakpoints="1280" data-mbreakpoints="680" data-visible="2" data-tab-visible="0" data-mob-visible="0"
+            data-scroll="1" data-auto="2000" data-controller="0" data-pause_hover="0" data-speed="1" data-wrapvar="0"
+            data-slider_nav="0" data-pager="0" data-effect="scroll" data-height="variable" data-horizontal="0"
+            data-css_url="/wp-content/themes/themify-ultra/themify/themify-builder/css/modules/sliders/carousel.css,/wp-content/themes/themify-ultra/themify/themify-builder/css/modules/sliders/slider.css">
+            <div class="tf_swiper-wrapper tf_lazy tf_rel tf_w tf_h tf_textc">
+              {berita.list.map((post,index)=>(
+                <div class="tf_swiper-slide" key={index}>
+                <div class="slide-inner-wrap">
+                  <figure class="tf_lazy slide-image">
+                    <a href={`/berita/${post.slug}-${post.id}`}>
+                      <img decoding="async" src={post.cover} width="600" height="350"
+                        title={post.title}
+                        alt={post.title} />
+                    </a>
+                  </figure>
 
-                 <h2 class="post-title entry-title">
-                   <a
-                     href="pondok-pesantren-kanzul ulum-jatibarang-brebes/index.html"
-                     >Pondok Pesantren Darussalam Jatibarang
-                     Brebes</a
-                   >
-                 </h2>
-
-                 <div class="entry-content">
-                 </div><!-- /.entry-content -->
-               </div>
-               <!-- /.post-content-inner -->
-             </div>
-             <!-- /.post-content -->
-           </article>
-           <!-- /.post -->
-           <article
-             id="post-128"
-             class="post tf_clearfix post-128 type-post status-publish format-standard has-post-thumbnail hentry category-artikel tag-pondok-pesantren-kanzul ulum tag-pondok-pesantren-kanzul ulum-jatibarang-brebes tag-ponpes-kanzul ulum-jatibarang tag-sejarah-pondok-pesantren tag-sejarah-pondok-pesantren-di-indonesia tag-sejarah-ponpes-di-indonesia has-post-title has-post-date has-post-category no-post-tag has-post-comment has-post-author cat-5"
-           >
-             <a
-               href="mengenal-awal-sejarah-pondok-pesantren-di-indonesia/index.html"
-               aria-label="Mengenal Awal Sejarah Pondok Pesantren di Indonesia"
-               data-post-permalink="yes"
-               style="display: none;"></a>
-             <figure class="post-image tf_clearfix">
-               <a
-                 href="mengenal-awal-sejarah-pondok-pesantren-di-indonesia/index.html"
-               >
-                 <img
-                   decoding="async"
-                   src="/assets/images/berita/artikel3.jpg"
-                   width="600"
-                   height="350"
-                   title="Mengenal Awal Sejarah Pondok Pesantren di Indonesia"
-                   alt="Mengenal Awal Sejarah Pondok Pesantren di Indonesia"
-                 />
-               </a>
-             </figure>
-             <div class="post-content">
-               <div class="post-content-inner">
-                 <div
-                   class="post-date-wrap post-date-inline"
-                 >
-                   <time
-                     class="post-date entry-date updated"
-                     datetime="2021-11-24"
-                   >
-                     <span class="year"
-                       >November 24, 2021</span
-                     >
-                   </time>
-                 </div><!-- .post-date-wrap -->
-
-                 <h2 class="post-title entry-title">
-                   <a
-                     href="mengenal-awal-sejarah-pondok-pesantren-di-indonesia/index.html"
-                     >Mengenal Awal Sejarah Pondok Pesantren
-                     di Indonesia</a
-                   >
-                 </h2>
-
-                 <div class="entry-content">
-                 </div><!-- /.entry-content -->
-               </div>
-               <!-- /.post-content-inner -->
-             </div>
-             <!-- /.post-content -->
-           </article>
-           <!-- /.post -->
-         </div><!-- .builder-posts-wrap -->
-       </div>
-       <!-- /module post -->
-       <div
-         class="module tf_clearfix themify_builder_slider_wrap module-slider tb_ljxi486 slider-default hide-desktop"
-         data-lazy="1"
-       >
-         <div
-           class="themify_builder_slider tf_carousel tf_swiper-container tf_rel tf_overflow"
-           data-lazy="1"
-           data-tbreakpoints="1280"
-           data-mbreakpoints="680"
-           data-visible="2"
-           data-tab-visible="0"
-           data-mob-visible="0"
-           data-scroll="1"
-           data-auto="2000"
-           data-controller="0"
-           data-pause_hover="0"
-           data-speed="1"
-           data-wrapvar="0"
-           data-slider_nav="0"
-           data-pager="0"
-           data-effect="scroll"
-           data-height="variable"
-           data-horizontal="0"
-           data-css_url="/wp-content/themes/themify-ultra/themify/themify-builder/css/modules/sliders/carousel.css,/wp-content/themes/themify-ultra/themify/themify-builder/css/modules/sliders/slider.css"
-         >
-           <div
-             class="tf_swiper-wrapper tf_lazy tf_rel tf_w tf_h tf_textc"
-           >
-             <div class="tf_swiper-slide">
-               <div class="slide-inner-wrap">
-                 <figure class="tf_lazy slide-image">
-                   <a
-                     href="pentingnya-pendidikan-agama-untuk-tumbuhkembang-anak/index.html"
-                   >
-                     <img
-                       decoding="async"
-                       src="/assets/images/berita/artikel1.jpg"
-                       width="600"
-                       height="350"
-                       title="Pentingnya Pendidikan Agama untuk Tumbuhkembang Anak"
-                       alt="Pentingnya Pendidikan Agama untuk Tumbuhkembang Anak"
-                     />
-                   </a>
-                 </figure>
-
-                 <div class="slide-content tb_text_wrap">
-                   <h3 class="slide-title">
-                     <a
-                       href="pentingnya-pendidikan-agama-untuk-tumbuhkembang-anak/index.html"
-                     >
-                       Pentingnya Pendidikan Agama untuk
-                       Tumbuhkembang Anak
-                     </a>
-                   </h3>
-                 </div>
-                 <!-- /slide-content -->
-               </div>
-             </div>
-             <div class="tf_swiper-slide">
-               <div class="slide-inner-wrap">
-                 <figure class="tf_lazy slide-image">
-                   <a
-                     href="pondok-pesantren-kanzul ulum-jatibarang-brebes/index.html"
-                   >
-                     <img
-                       decoding="async"
-                       src="/assets/images/berita/artikel2.jpg"
-                       width="600"
-                       height="350"
-                       title="Pondok Pesantren Darussalam Jatibarang Brebes"
-                       alt="Pondok Pesantren Darussalam Jatibarang Brebes"
-                     />
-                   </a>
-                 </figure>
-
-                 <div class="slide-content tb_text_wrap">
-                   <h3 class="slide-title">
-                     <a
-                       href="pondok-pesantren-kanzul ulum-jatibarang-brebes/index.html"
-                     >
-                       Pondok Pesantren Kanzul Ulum Cirebon
-                     </a>
-                   </h3>
-                 </div>
-                 <!-- /slide-content -->
-               </div>
-             </div>
-             <div class="tf_swiper-slide">
-               <div class="slide-inner-wrap">
-                 <figure class="tf_lazy slide-image">
-                   <a
-                     href="mengenal-awal-sejarah-pondok-pesantren-di-indonesia/index.html"
-                   >
-                     <img
-                       decoding="async"
-                       src="/assets/images/berita/artikel3.jpg"
-                       width="600"
-                       height="350"
-                       title="Mengenal Awal Sejarah Pondok Pesantren di Indonesia"
-                       alt="Mengenal Awal Sejarah Pondok Pesantren di Indonesia"
-                     />
-                   </a>
-                 </figure>
-
-                 <div class="slide-content tb_text_wrap">
-                   <h3 class="slide-title">
-                     <a
-                       href="mengenal-awal-sejarah-pondok-pesantren-di-indonesia/index.html"
-                     >
-                       Mengenal Awal Sejarah Pondok Pesantren
-                       di Indonesia
-                     </a>
-                   </h3>
-                 </div>
-                 <!-- /slide-content -->
-               </div>
-             </div>
-             <!-- /themify_builder_slider -->
-           </div>
-         </div>
-       </div>
-     </div>
-   </div>
- </div>
- <!-- /row_inner -->
+                  <div class="slide-content tb_text_wrap">
+                    <h3 class="slide-title">
+                      <a href={`/berita/${post.slug}-${post.id}`}>
+                        {post.title}
+                      </a>
+                    </h3>
+                  </div>
+                  <!-- /slide-content -->
+                </div>
+              </div>
+              ))}
+              <!-- /themify_builder_slider -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /row_inner -->
 </div>
 <!-- /module_row -->

@@ -1,124 +1,84 @@
 ---
-const {page}=Astro.props;
+      const { page } = Astro.props
 ---
-
 <!doctype html>
 <html lang="id">
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>
-    {page.title}
-  </title>
-  <meta name="robots" content="max-image-preview:large" />
- <!-- <StLazyCommon/> -->
- <style>
-    /*chrome bug,prevent run transition on the page loading*/
-    <noscript
-><style>
-  body:not(.page-loaded) #main-nav li .sub-menu {
-    display: block;
-  }
-  <
-    </style></noscript>
-  <link
-    href="/favicon.png"
-    rel="shortcut icon"
-  />
-  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
-  <link
-    rel="preload"
-    href="wp-content/uploads/themify-css/concate/3026380979/themify-concate-1530653080.min.css"
-    as="style"
-  /><link
-    id="themify_concate-css"
-    rel="stylesheet"
-    href="wp-content/uploads/themify-css/concate/3026380979/themify-concate-1530653080.min.css"
-  /><link
-    rel="preload"
-    href="wp-content/uploads/themify-css/concate/3026380979/themify-mobile-53844941.min.css"
-    as="style"
-    media="screen and (max-width:680px)"
-  /><link
-    id="themify_mobile_concate-css"
-    rel="stylesheet"
-    href="wp-content/uploads/themify-css/concate/3026380979/themify-mobile-53844941.min.css"
-    media="screen and (max-width:680px)"
-  />
-  
-  
-  <link
-    rel="preload"
-    href="wp-content/plugins/contact-form-7/includes/css/styles7661.css?ver=5.4.2"
-    as="style"
-  /><link
-    rel="stylesheet"
-    id="contact-form-7-css"
-    href="wp-content/plugins/contact-form-7/includes/css/styles7661.css?ver=5.4.2"
-    media="all"
-  />
-  <link
-    rel="preload"
-    href="wp-content/plugins/revslider/public/assets/css/settingsf542.css?ver=5.4.8.3"
-    as="style"
-  /><link
-    rel="stylesheet"
-    id="rs-plugin-settings-css"
-    href="wp-content/plugins/revslider/public/assets/css/settingsf542.css?ver=5.4.8.3"
-    media="all"
-  />
-  <style id="rs-plugin-settings-inline-css">
-    #rs-demo-id {
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>
+  {page.title}
+</title>
+<meta name="robots" content="max-image-preview:large" />
+<noscript>
+
+  <style>
+/*chrome bug,prevent run transition on the page loading*/
+
+    body:not(.page-loaded) #main-nav li .sub-menu {
+      display: block;
     }
   </style>
-  <script
-    src="wp-includes/js/jquery/jquery.min.js"
-    id="jquery-core-js"></script>
-  <script
-    src="wp-content/plugins/revslider/public/assets/js/jquery.themepunch.tools.minf542.js?ver=5.4.8.3"
-    id="tp-tools-js"></script>
-  <script
-    src="wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.minf542.js?ver=5.4.8.3"
-    id="revmin-js"></script>
-    <link rel="canonical" href="index.html" />
-  <link rel="shortlink" href="index.html" />
-  
-  
-  <!-- meta -->
-  <meta
-    name="description"
-    content={page.meta.description}
-  />
-  <meta
-    name={page.meta.name}
-  />
-  
-  <noscript
-    ><style>
-      .themify_builder .wow,
-      .wow .tf_lazy {
-        visibility: visible !important;
-      }
-    </style></noscript
-  >
-  <!-- REVO SLIDER -->
-  <script type="text/javascript">
-    function setREVStartSize(e) {
-      try {
-        e.c = jQuery(e.c)
-        var i = jQuery(window).width(),
-          t = 9999,
-          r = 0,
-          n = 0,
-          l = 0,
-          f = 0,
-          s = 0,
-          h = 0
-        if (
-          (e.responsiveLevels &&
-            (jQuery.each(e.responsiveLevels, function (e, f) {
-              f > i && ((t = r = f), (l = e)),
-                i > f && f > r && ((r = f), (n = e))
-            }),
+</noscript>
+<link href="/favicon.png" rel="shortcut icon" />
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+<link rel="preload" href="wp-content/uploads/themify-css/concate/3026380979/themify-concate-1530653080.min.css"
+  as="style" />
+<link id="themify_concate-css" rel="stylesheet"
+  href="wp-content/uploads/themify-css/concate/3026380979/themify-concate-1530653080.min.css" />
+<link rel="preload" href="wp-content/uploads/themify-css/concate/3026380979/themify-mobile-53844941.min.css" as="style"
+  media="screen and (max-width:680px)" />
+<link id="themify_mobile_concate-css" rel="stylesheet"
+  href="wp-content/uploads/themify-css/concate/3026380979/themify-mobile-53844941.min.css"
+  media="screen and (max-width:680px)" />
+
+<link rel="preload" href="wp-content/plugins/contact-form-7/includes/css/styles7661.css?ver=5.4.2" as="style" />
+<link rel="stylesheet" id="contact-form-7-css"
+  href="wp-content/plugins/contact-form-7/includes/css/styles7661.css?ver=5.4.2" media="all" />
+<link rel="preload" href="wp-content/plugins/revslider/public/assets/css/settingsf542.css?ver=5.4.8.3" as="style" />
+<link rel="stylesheet" id="rs-plugin-settings-css"
+  href="wp-content/plugins/revslider/public/assets/css/settingsf542.css?ver=5.4.8.3" media="all" />
+<style id="rs-plugin-settings-inline-css">
+  #rs-demo-id {}
+</style>
+<script src="wp-includes/js/jquery/jquery.min.js" id="jquery-core-js"></script>
+<script src="wp-content/plugins/revslider/public/assets/js/jquery.themepunch.tools.minf542.js?ver=5.4.8.3"
+  id="tp-tools-js"></script>
+<script src="wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.minf542.js?ver=5.4.8.3"
+  id="revmin-js"></script>
+<link rel="canonical" href="index.html" />
+<link rel="shortlink" href="index.html" />
+
+<!-- meta -->
+<meta name="description" content={page.meta.description} />
+<meta name={page.meta.name} />
+
+<noscript>
+  <style>
+    .themify_builder .wow,
+    .wow .tf_lazy {
+      visibility: visible !important;
+    }
+  </style>
+</noscript>
+<!-- REVO SLIDER -->
+<script type="text/javascript">
+  function setREVStartSize(e) {
+    try {
+      e.c = jQuery(e.c);
+      var i = jQuery(window).width(),
+        t = 9999,
+        r = 0,
+        n = 0,
+        l = 0,
+        f = 0,
+        s = 0,
+        h = 0;
+      if (
+        (e.responsiveLevels &&
+          (jQuery.each(e.responsiveLevels, function (e, f) {
+            f > i && ((t = r = f), (l = e)),
+              i > f && f > r && ((r = f), (n = e));
+          }),
             t > r && (l = n)),
           (f = e.gridheight[l] || e.gridheight[0] || e.gridheight),
           (s = e.gridwidth[l] || e.gridwidth[0] || e.gridwidth),
@@ -126,38 +86,35 @@ const {page}=Astro.props;
           (h = h > 1 ? 1 : h),
           (f = Math.round(h * f)),
           "fullscreen" == e.sliderLayout)
-        ) {
-          var u = (e.c.width(), jQuery(window).height())
-          if (void 0 != e.fullScreenOffsetContainer) {
-            var c = e.fullScreenOffsetContainer.split(",")
-            if (c)
-              jQuery.each(c, function (e, i) {
-                u = jQuery(i).length > 0 ? u - jQuery(i).outerHeight(!0) : u
-              }),
-                e.fullScreenOffset.split("%").length > 1 &&
+      ) {
+        var u = (e.c.width(), jQuery(window).height());
+        if (void 0 != e.fullScreenOffsetContainer) {
+          var c = e.fullScreenOffsetContainer.split(",");
+          if (c)
+            jQuery.each(c, function (e, i) {
+              u = jQuery(i).length > 0 ? u - jQuery(i).outerHeight(!0) : u;
+            }),
+              e.fullScreenOffset.split("%").length > 1 &&
                 void 0 != e.fullScreenOffset &&
                 e.fullScreenOffset.length > 0
-                  ? (u -=
-                      (jQuery(window).height() *
-                        parseInt(e.fullScreenOffset, 0)) /
-                      100)
-                  : void 0 != e.fullScreenOffset &&
-                    e.fullScreenOffset.length > 0 &&
-                    (u -= parseInt(e.fullScreenOffset, 0))
-          }
-          f = u
-        } else void 0 != e.minHeight && f < e.minHeight && (f = e.minHeight)
-        e.c.closest(".rev_slider_wrapper").css({ height: f })
-      } catch (d) {
-        console.log("Failure at Presize of Slider:" + d)
-      }
+                ? (u -=
+                  (jQuery(window).height() *
+                    parseInt(e.fullScreenOffset, 0)) /
+                  100)
+                : void 0 != e.fullScreenOffset &&
+                e.fullScreenOffset.length > 0 &&
+                (u -= parseInt(e.fullScreenOffset, 0));
+        }
+        f = u;
+      } else void 0 != e.minHeight && f < e.minHeight && (f = e.minHeight);
+      e.c.closest(".rev_slider_wrapper").css({ height: f });
+    } catch (d) {
+      console.log("Failure at Presize of Slider:" + d);
     }
-  </script>
-
-  <body class="home page-template-default page page-id-71 skin-fashion sidebar-none full_width tb_animation_on ready-view header-top-widgets fixed-header-enabled footer-left-col social-widget-off filter-hover-none filter-all sidemenu-active"
-  >
-    <slot/>
-  </body>
-
-
+  }
+</script>
+<body
+class="home page-template-default page page-id-71 skin-fashion sidebar-none full_width tb_animation_on ready-view header-top-widgets fixed-header-enabled footer-left-col social-widget-off filter-hover-none filter-all sidemenu-active">
+<slot />
+</body>
 </html>

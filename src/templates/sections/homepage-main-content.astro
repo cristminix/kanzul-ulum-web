@@ -1,10 +1,12 @@
 ---
-import WelcomeMessageBanner from "../blocks/welcome-message-banner.astro"
-import HomepageImageCarouselSlide from "../blocks/homepage-image-caraousel-slide.astro"
-import ShortCompanyProfile from "../blocks/short-company-profile.astro"
-import LembagaList from "../blocks/lembaga-list.astro"
-import HomepageGaleryList from "../blocks/homepage-galery-list.astro"
-import MainNewsCard from "../blocks/main-news-card.astro"
+import WelcomeMessageBanner from "../blocks/welcome-message-banner.astro";
+import HomepageImageCarouselSlide from "../blocks/homepage-image-caraousel-slide.astro";
+import ShortCompanyProfile from "../blocks/short-company-profile.astro";
+import LembagaList from "../blocks/lembaga-list.astro";
+import HomepageGaleryList from "../blocks/homepage-galery-list.astro";
+import MainNewsCard from "../blocks/main-news-card.astro";
+
+const { berita, galery } = Astro.props;
 ---
 
 <div id="body" class="tf_box tf_clear tf_mw tf_clearfix">
@@ -25,8 +27,8 @@ import MainNewsCard from "../blocks/main-news-card.astro"
               <ShortCompanyProfile/>
               
              <LembagaList/>
-             <HomepageGaleryList/>
-             <MainNewsCard/>
+             <HomepageGaleryList galery={galery}/>
+             <MainNewsCard berita={berita}/>
             </div>
             <!--/themify_builder_content-->
             <!-- /comments -->

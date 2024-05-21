@@ -1,0 +1,25 @@
+{
+	"list": [
+		{
+			"id": 1,
+			"title": "Pentingnya Pendidikan Agama untuk Tumbuhkembang Anak",
+			"slug": "pentingya-123",
+			"cover": "/assets/images/berita/artikel1.jpg",
+			"date": "24 November 2024"
+		},
+		{
+			"id": 2,
+			"title": "Pondok Pesantren Kanzulum Kesambi Cirebon",
+			"slug": "pondok-pesantren",
+			"cover": "/assets/images/berita/artikel2.jpg",
+			"date": "21 November 2024"
+		},
+		{
+			"id": 3,
+			"title": "Mengenal Sejarah Pondok Pesantren di Indonesia",
+			"slug": "mengenal-123",
+			"cover": "/assets/images/berita/artikel1.jpg",
+			"date": "24 November 2024"
+		}
+	]
+}
