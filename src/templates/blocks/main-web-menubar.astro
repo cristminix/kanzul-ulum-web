@@ -16,7 +16,8 @@ import webMenu from "../../data/web-menu.json";
                 const slug = menu.title.toLocaleLowerCase()
                 const menuCls='menu-item menu-item-type-post_type menu-item-object-page '
                 const activeMenuCls = `current-menu-item current_page_item menu-item menu-item-type-post_type menu-item-object-page`
-                const selectedCls = pathname == menu.path ? activeMenuCls:menuCls
+                console.log(pathname,menu.path)
+                const selectedCls = (pathname == menu.path || `${menu.path}/` == pathname) ? activeMenuCls:menuCls
              return (<li key={index} class={`menu-item-page-${index}  menu-item-${slug} menu-item-${index} ${selectedCls}`}>
                   <a href={menu.path}>{menu.title}</a>
               </li>)

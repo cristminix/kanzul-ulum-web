@@ -75,14 +75,20 @@ const css_modules = {
 	ii: "wp-content/themes/themify-ultra/themify/js/modules/jquery.isotope.min.js",
 	jj: "wp-content/themes/themify-ultra/themify/themify-builder/css/modules/responsive-column.css",
 };
-const adds={
-	a:"wp-content/themes/themify-ultra/themify/css/modules/search-form-dropdown.css",
-      b: "wp-content/themes/themify-ultra/themify/css/modules/search-form-overlay.css",
-       c:"wp-content/themes/themify-ultra/themify/js/modules/ajax-search.js",
-       d:"wp-content/themes/themify-ultra/styles/modules/search-form-overlay.css",
-}
+const adds = {
+	a: "wp-content/themes/themify-ultra/themify/css/modules/search-form-dropdown.css",
+	b: "wp-content/themes/themify-ultra/themify/css/modules/search-form-overlay.css",
+	c: "wp-content/themes/themify-ultra/themify/js/modules/ajax-search.js",
+	d: "wp-content/themes/themify-ultra/styles/modules/search-form-overlay.css",
+	e: "wp-content/themes/themify-ultra/themify/themify-builder/css/modules/appearance/shadow.css",
+	f: "wp-content/themes/themify-ultra/themify/themify-builder/css/modules/appearance/embossed.css",
+	g: "wp-content/themes/themify-ultra/themify/themify-builder/css/modules/appearance/rounded.css",
+	h: "wp-content/themes/themify-ultra/themify/themify-builder/css/modules/colors/green.css",
+	i: "wp-content/themes/themify-ultra/themify/themify-builder/css/modules/gallery_styles/grid.css",
+	j:"wp-content/themes/themify-ultra/themify/themify-builder/css/modules/buttons_styles/outline.css"
+};
 const main = async () => {
-	const sources = [js_modules, js_modules2, css_modules,adds];
+	const sources = [js_modules, js_modules2, css_modules, adds];
 	for (const item of sources) {
 		for (const [key, value] of Object.entries(item)) {
 			//https://www.ponpesdarussalamjatibarangbrebes.com/
