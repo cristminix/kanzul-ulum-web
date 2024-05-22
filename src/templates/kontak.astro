@@ -1,0 +1,21 @@
+---
+import { contact, company, contact_person } from "../data/site-data.json";
+import LembagaMainContent from "./sections/lembaga-main-content.astro";
+
+const page = {
+	title: `Lembaga ${company.name} `,
+	meta: {
+		name: "lembaga ponpes kanzul ulum kesambi, lembaga pondok pesantren kanzul ulum, lembaga pondok pesantren kanzul ulum kesambi cirebon, pondok pesantren kanzul ulum kesambi, pondok pesantren kanzul ulum cirebon, pondok pesantren di cirebon, ponpes cirebon, pengurus pondok pesantren kanzul ulum",
+		description: `Lembaga ${company.shortAddress} Hub. ${contact.phone}`,
+	},
+};
+
+import ColumnLayout from "./layouts/column.astro";
+const { frontmatter } = Astro.props;
+import "../styles/lembaga.css";
+---
+
+<ColumnLayout page={page} contact={contact} cp={contact_person} company={company}>
+  <LembagaMainContent/>
+</ColumnLayout>
+ 
