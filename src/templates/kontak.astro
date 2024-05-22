@@ -1,21 +1,21 @@
 ---
 import { contact, company, contact_person } from "../data/site-data.json";
-import LembagaMainContent from "./sections/lembaga-main-content.astro";
+import KontakMainContent from "./sections/kontak-main-content.astro";
 
 const page = {
-	title: `Lembaga ${company.name} `,
+	title: `Kontak ${company.name} `,
 	meta: {
-		name: "lembaga ponpes kanzul ulum kesambi, lembaga pondok pesantren kanzul ulum, lembaga pondok pesantren kanzul ulum kesambi cirebon, pondok pesantren kanzul ulum kesambi, pondok pesantren kanzul ulum cirebon, pondok pesantren di cirebon, ponpes cirebon, pengurus pondok pesantren kanzul ulum",
-		description: `Lembaga ${company.shortAddress} Hub. ${contact.phone}`,
+		name: "kontak ponpes kanzul ulum kesambi, kontak pondok pesantren kanzul ulum, kontak pondok pesantren kanzul ulum kesambi cirebon, pondok pesantren kanzul ulum kesambi, pondok pesantren kanzul ulum cirebon, pondok pesantren di cirebon, ponpes cirebon, pengurus pondok pesantren kanzul ulum",
+		description: `Kontak ${company.shortAddress} Hub. ${contact.phone}`,
 	},
 };
 
 import ColumnLayout from "./layouts/column.astro";
 const { frontmatter } = Astro.props;
-import "../styles/lembaga.css";
+import "../styles/kontak.css";
 ---
 
 <ColumnLayout page={page} contact={contact} cp={contact_person} company={company}>
-  <LembagaMainContent/>
+  <KontakMainContent contact={contact} company={company} cp={contact_person}/>
 </ColumnLayout>
  
