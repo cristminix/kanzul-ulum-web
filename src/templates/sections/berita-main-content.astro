@@ -1,0 +1,103 @@
+---
+import MainCompanyBanner from "../blocks/main-company-banner.astro";
+import MainBreadcrumb from "../blocks/main-breadcrumb.astro";
+// import LembagaListAdvance from "../blocks/lembaga-list-advance.astro";
+const breadcrumbs = [
+	{ title: "Home", path: "/" },
+	{ title: "Berita", path: "/berita" },
+];
+
+const { berita } = Astro.props;
+---
+<div id="body" class="tf_box tf_clear tf_mw tf_clearfix">
+    <!-- layout-container -->
+    <div id="layout" class="pagewidth tf_box tf_clearfix">
+        <!-- content -->
+        <main id="content" class="tf_box tf_clearfix">
+            <div id="page-71" class="type-page">
+                <div class="page-content entry-content">
+                    <!--themify_builder_content-->
+                    <div id="themify_builder_content-71" data-postid="71"
+                        class="themify_builder_content themify_builder_content-71 themify_builder tf_clear">
+                        <MainCompanyBanner/>
+                        <MainBreadcrumb breadcrumbs={breadcrumbs}/>
+                        <!-- module_row -->
+                        <div data-lazy="1" class="module_row themify_builder_row tb_rga8566 tf_clearfix">
+                            <div class="row_inner col_align_top tf_box tf_w tf_rel">
+                                <div data-lazy="1" class="module_column tb-column col-full first tb_arvp501 tf_box">
+                                    <div class="tb-column-inner tf_box tf_w">
+                                        <!-- module post -->
+                                        <div class="module module-post tb_m42q036 ">
+                                            <div class="builder-posts-wrap loops-wrapper grid3 masonry boxed tf_rel tf_clear tf_clearfix"
+                                                data-lazy="1">
+                                                {berita.list.map((post,index)=>{
+                                                    return(<article id={`post-${post.id}`} key={index}
+                                                    class={`post tf_clearfix post-142 type-post status-publish format-standard has-post-thumbnail hentry category-artikel  has-post-title has-post-date has-post-category no-post-tag has-post-comment has-post-author cat-5 ${post.tags}`}>
+
+                                                    <a href={`/berita/${post.slug}-${post.id}`}
+                                                        aria-label={post.title}
+                                                        data-post-permalink="yes" style="display: none;"></a>
+                                                    <figure class="post-image tf_clearfix">
+                                                        <a
+                                                            href={`/berita/${post.slug}-${post.id}`}>
+                                                            <img decoding="async"
+                                                                src="/assets/images/berita/artikel1.jpg"
+                                                                width="600" height="350"
+                                                                title={post.title}
+                                                                alt={post.title}>
+                                                        </a>
+                                                    </figure>
+                                                    <div class="post-content">
+                                                        <div class="post-content-inner">
+
+                                                            <div class="post-date-wrap post-date-inline">
+                                                                <time class="post-date entry-date updated"
+                                                                    datetime="2021-11-24">
+                                                                    <span class="year">{post.date}</span>
+                                                                </time>
+                                                            </div><!-- .post-date-wrap -->
+
+                                                            <h2 class="post-title entry-title"><a
+                                                                    href={`/berita/${post.slug}-${post.id}`}>{post.title}</a></h2>
+
+
+                                                            <div class="entry-content">
+
+
+                                                                <p>{post.headline} [&hellip;]</p>
+
+
+
+                                                            </div><!-- /.entry-content -->
+
+                                                        </div>
+                                                        <!-- /.post-content-inner -->
+                                                    </div>
+                                                    <!-- /.post-content -->
+
+                                                </article>)
+                                                })}
+                                                
+                                                
+                                                <!-- /.post -->
+                                            </div><!-- .builder-posts-wrap -->
+                                        </div>
+                                        <!-- /module post -->
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /row_inner -->
+                        </div>
+                        <!-- /module_row -->
+                    </div>
+                    <!--/themify_builder_content-->
+                    <!-- /comments -->
+                </div>
+                <!-- /.post-content -->
+            </div>
+            <!-- /.type-page -->
+        </main>
+        <!-- /content -->
+    </div>
+    <!-- /layout-container -->
+</div><!-- /body -->
