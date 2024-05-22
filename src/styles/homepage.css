@@ -305,3 +305,6 @@ div.tf_audio_lazy audio {
   border-radius: 4px;
 }
 
+#main-nav li{
+  margin-right: 4px !important;
+}

@@ -1,6 +1,4 @@
 ---
-import MainCompanyBanner from "./main-company-banner.astro";
-import MainBreadcrumb from "./main-breadcrumb.astro";
 ---
 
 <style>
@@ -11,20 +9,61 @@ import MainBreadcrumb from "./main-breadcrumb.astro";
     /* margin-left: 1em;
     margin-right: 1em; */
   }
+  .container-0{
+    /* border:solid 1px red; */
+    margin:1em;
+    width: 60%;
+    margin: 1em auto;
+  }
+  .container-1{
+    display: flex;
+  }
+  .container-2{
+
+  }
+  .container-1 .box{
+    width:30%;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+  .image-wrap {
+   /* width: 50%;  */
+   /*or whatever you choose*/
+   margin: auto;
+}
+.image-wrap img {
+   display: block;
+   width: 100%;
+   max-width: 500px; /*actual image width*/
+   height: auto; /* maintain aspect ratio*/
+   margin: auto; /*optional centering of image*/
+}
+  .container-1 .image-content{
+    width: 70%;
+    padding: 1em 0;
+  }
+  .image-caption{
+    font-size: 1.5em;
+    margin-bottom: .5em
+  }
+  .image-description{
+
+  }
 </style>
-<MainCompanyBanner/>
-<MainBreadcrumb breadcrumbs={[{title:"Lembaga",path:"/lembaga"}]}/>
 <!-- module_row -->
 <div data-lazy="1"
   class="module_row themify_builder_row tb_0azu289 tf_clearfix hide-tablet hide-tablet_landscape hide-mobile" >
-  <div class="row_inner col_align_middle gutter-narrow tf_box tf_w tf_rel" style="justify-content: center;">
-    <div data-lazy="1" class="module_column tb-column col5-1 first tb_j8da291 tf_box">
+  <div class=" col_align_middle gutter-narrow tf_box tf_w tf_rel">
+    <div data-lazy="1" class="container-0">
       <div class="tb-column-inner tf_box tf_w">
         <!-- module image -->
-        <div class="module module-image tb_fdg1191 image-center tf_mw" data-lazy="1" style="background-image: url('/assets/images/lembaga/lb-tpq-sm.png')">
-          <div class="image-wrap tf_rel tf_mw">
-            <img decoding="async" src="/assets/images/bg-gray.png" width="191" height="190" alt="Taman Pendidikan Qur’an Kanzul Ulum" />
+        <div class="container-1" data-lazy="1" >
+          <div class="box">
+          <div class="image-wrap">
+            <img decoding="async" src="/assets/images/lembaga/lb-tpq-sm.png"  alt="Taman Pendidikan Qur’an Kanzul Ulum" />
           </div>
+        </div>
           <!-- /image-wrap -->
 
           <div class="image-content">
@@ -32,39 +71,52 @@ import MainBreadcrumb from "./main-breadcrumb.astro";
               Taman Pendidikan Qur’an Kanzul Ulum 
             </div>
             <!-- /image-caption -->
+          <div class="image-description">
+            <p>Taman Pendidikan Al-Qur'an  merupakan lembaga pendidikan nonformal jenis keagamaan Islam yang bertujuan untuk memberikan pengajaran membaca Al-Qur'an sejak usia dini, serta memahami dasar-dasar dinul Islam pada anak usia taman kanak-kanak. TPA/TPQ setara dengan Raudhatul Athfal RA dan taman kanak-kanak (TK), di mana kurikulumnya ditekankan pada pemberian dasar-dasar membaca Al-Qur'an serta membantu pertumbuhan dan perkembangan rohani anak agar memiliki kesiapan dalam memasuki pendidikan lebih lanjut.</p>
           </div>
+        </div>
           <!-- /image-content -->
         </div>
         <!-- /module image -->
       </div>
     </div>
-    <div data-lazy="1" class="module_column tb-column col5-1 first tb_j8da291 tf_box">
+    <div data-lazy="1" class="container-0">
       <div class="tb-column-inner tf_box tf_w">
         <!-- module image -->
-        <div class="module module-image tb_fdg1191 image-center tf_mw" data-lazy="1" style="background-image: url('/assets/images/lembaga/lb-dta-sm.png')">
-          <div class="image-wrap tf_rel tf_mw">
-            <img decoding="async" src="/assets/images/bg-gray.png" width="191" height="190" alt="Madrasah Diniyah Ta’miliyah Awaliyah Kanzul Ulum" />
-          </div>
-          <!-- /image-wrap -->
+        <div class="container-1" data-lazy="1" >
+         
 
           <div class="image-content">
             <div class="image-caption tb_text_wrap">
               Madrasah Diniyah Ta’miliyah Awaliyah Kanzul Ulum
             </div>
             <!-- /image-caption -->
+          <div class="image-description">
+            Madrasah Diniyah Takmiliyah Awaliyah (MDTA) adalah satuan pendidikan keagamaan Islam bersifat non formal yang menyelenggarakan pendidikan tingkat dasar (SD/MI) dengan pendidikan agama Islam yang meliputi AlQur’an, Hadits, Tajwid, Aqidah, Akhlaq, Fiqih, Sejarah dan Kebudayaan Islam, Bahasa Arab dan Praktek Ibadah untuk memenuhi kebutuhan masyarakat akan tambahan pendidikan agama Islam terutama bagi siswa yang belajar di sekolah dasar (SD) atau pendidikan sederajat.
           </div>
+        </div>
           <!-- /image-content -->
+          <div class="box">
+
+          <div class="image-wrap">
+            <img decoding="async" src="/assets/images/lembaga/lb-dta-sm.png" width="191" height="190" alt="Madrasah Diniyah Ta’miliyah Awaliyah Kanzul Ulum" />
+          </div>
+        </div>
+          <!-- /image-wrap -->
         </div>
         <!-- /module image -->
       </div>
     </div>
-    <div data-lazy="1" class="module_column tb-column col5-1 first tb_j8da291 tf_box">
+    <div data-lazy="1" class="container-0">
       <div class="tb-column-inner tf_box tf_w">
         <!-- module image -->
-        <div class="module module-image tb_fdg1191 image-center tf_mw" data-lazy="1" style="background-image: url('/assets/images/lembaga/lb-mta-sm.png')">
-          <div class="image-wrap tf_rel tf_mw">
-            <img decoding="async" src="/assets/images/bg-gray.png" width="191" height="190" alt="Majllis Ta’lim Kanzul Ulum" />
+        <div class="container-1" data-lazy="1">
+          <div class="box">
+
+          <div class="image-wrap">
+            <img decoding="async" src="/assets/images/lembaga/lb-mta-sm.png"  alt="Majllis Ta’lim Kanzul Ulum" />
           </div>
+        </div>
           <!-- /image-wrap -->
 
           <div class="image-content">
@@ -72,7 +124,10 @@ import MainBreadcrumb from "./main-breadcrumb.astro";
               Majllis Ta’lim Kanzul Ulum 
             </div>
             <!-- /image-caption -->
+          <div class="image-desscription">
+            <p>Majelis taklim adalah salah satu lembaga pendidikan keagamaan nonformal yang bertujuan meningkatkan keimanan dan ketakwaan kepada Allah SWT. Proses pembelajaran di dalamnya mengarah kepada pembentukan akhlak mulia bagi jamaahnya, serta mewujudkan rahmat bagi alam semesta, merupakan tempat pangajaran atau pendidikan agama Islam yang paling fleksibel dan tidak terikat oleh waktu. Sifatnya terbuka. Usia berapa pun, profesi apa pun, suku apa pun, dapat bergabung di dalamnya. Waktu penyelenggaraannya pun tidak terikat, bisa pagi, siang, sore, atau malam. Lokasi taklim pun bisa dilakukan di dalam maupun di luar ruangan.</p>
           </div>
+        </div>
           <!-- /image-content -->
         </div>
         <!-- /module image -->

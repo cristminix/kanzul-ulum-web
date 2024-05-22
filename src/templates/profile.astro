@@ -1,7 +1,21 @@
 ---
-import ColumnLayout from "./layouts/column.astro"
-const { frontmatter } = Astro.props
+import { contact, company, contact_person } from "../data/site-data.json";
+import ProfileMainContent from "./sections/profile-main-content.astro";
+
+const page = {
+	title: `Profil ${company.name} Pengurus ${company.shortAddress}`,
+	meta: {
+		name: "profil ponpes kanzul ulum kesambi, profil pondok pesantren kanzul ulum, profil pondok pesantren kanzul ulum kesambi cirebon, pondok pesantren kanzul ulum kesambi, pondok pesantren kanzul ulum cirebon, pondok pesantren di cirebon, ponpes cirebon, pengurus pondok pesantren kanzul ulum",
+		description: `Profil ${company.shortAddress} Hub. ${contact.phone}`,
+	},
+};
+
+import ColumnLayout from "./layouts/column.astro";
+const { frontmatter } = Astro.props;
+import "../styles/profile.css";
 ---
 
-<ColumnLayout>
+<ColumnLayout page={page} contact={contact} cp={contact_person} company={company}>
+  <ProfileMainContent/>
 </ColumnLayout>
+ 

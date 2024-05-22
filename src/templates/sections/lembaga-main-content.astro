@@ -1,0 +1,37 @@
+---
+import MainCompanyBanner from "../blocks/main-company-banner.astro";
+import MainBreadcrumb from "../blocks/main-breadcrumb.astro";
+import ShortCompanyProfile from "../blocks/short-company-profile.astro";
+import VisiMisi from "../blocks/visi-misi.astro";
+import LembagaListAdvance from "../blocks/lembaga-list-advance.astro";
+const breadcrumbs = [
+	{ title: "Home", path: "/" },
+	{ title: "Lembaga", path: "/lembaga" },
+];
+---
+<div id="body" class="tf_box tf_clear tf_mw tf_clearfix">
+
+    <!-- layout-container -->
+    <div id="layout" class="pagewidth tf_box tf_clearfix">
+        <!-- content -->
+        <main id="content" class="tf_box tf_clearfix">
+            <div id="page-71" class="type-page">
+                <div class="page-content entry-content">
+                    <!--themify_builder_content-->
+                    <div id="themify_builder_content-71" data-postid="71"
+                        class="themify_builder_content themify_builder_content-71 themify_builder tf_clear">
+                        <MainCompanyBanner/>
+                        <MainBreadcrumb breadcrumbs={breadcrumbs}/>
+                        <LembagaListAdvance/>
+                    </div>
+                    <!--/themify_builder_content-->
+                    <!-- /comments -->
+                </div>
+                <!-- /.post-content -->
+            </div>
+            <!-- /.type-page -->
+        </main>
+        <!-- /content -->
+    </div>
+    <!-- /layout-container -->
+</div><!-- /body -->
