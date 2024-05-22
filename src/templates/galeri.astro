@@ -1,21 +1,22 @@
 ---
 import { contact, company, contact_person } from "../data/site-data.json";
-import LembagaMainContent from "./sections/lembaga-main-content.astro";
+import GaleriMainContent from "./sections/galeri-main-content.astro";
 
 const page = {
-	title: `Lembaga ${company.name} `,
+	title: `Galeri ${company.name} `,
 	meta: {
-		name: "lembaga ponpes kanzul ulum kesambi, lembaga pondok pesantren kanzul ulum, lembaga pondok pesantren kanzul ulum kesambi cirebon, pondok pesantren kanzul ulum kesambi, pondok pesantren kanzul ulum cirebon, pondok pesantren di cirebon, ponpes cirebon, pengurus pondok pesantren kanzul ulum",
-		description: `Lembaga ${company.shortAddress} Hub. ${contact.phone}`,
+		name: "galeri ponpes kanzul ulum kesambi, galeri pondok pesantren kanzul ulum, galeri pondok pesantren kanzul ulum kesambi cirebon, pondok pesantren kanzul ulum kesambi, pondok pesantren kanzul ulum cirebon, pondok pesantren di cirebon, ponpes cirebon, pengurus pondok pesantren kanzul ulum",
+		description: `Galeri ${company.shortAddress} Hub. ${contact.phone}`,
 	},
 };
+import galery from "../data/galery.json";
 
 import ColumnLayout from "./layouts/column.astro";
 const { frontmatter } = Astro.props;
-import "../styles/lembaga.css";
+import "../styles/galeri.css";
 ---
 
 <ColumnLayout page={page} contact={contact} cp={contact_person} company={company}>
-  <LembagaMainContent/>
+  <GaleriMainContent galery={galery}/>
 </ColumnLayout>
  

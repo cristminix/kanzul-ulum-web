@@ -1,0 +1,121 @@
+---
+import MainCompanyBanner from "../blocks/main-company-banner.astro";
+import MainBreadcrumb from "../blocks/main-breadcrumb.astro";
+// import LembagaListAdvance from "../blocks/lembaga-list-advance.astro";
+const breadcrumbs = [
+	{ title: "Home", path: "/" },
+	{ title: "Galeri", path: "/galeri" },
+];
+
+const { galery } = Astro.props;
+---
+<div id="body" class="tf_box tf_clear tf_mw tf_clearfix">
+    <!-- layout-container -->
+    <div id="layout" class="pagewidth tf_box tf_clearfix">
+        <!-- content -->
+        <main id="content" class="tf_box tf_clearfix">
+            <div id="page-71" class="type-page">
+                <div class="page-content entry-content">
+                    <!--themify_builder_content-->
+                    <div id="themify_builder_content-71" data-postid="71"
+                        class="themify_builder_content themify_builder_content-71 themify_builder tf_clear">
+                        <MainCompanyBanner/>
+                        <MainBreadcrumb breadcrumbs={breadcrumbs}/>
+                        <!-- module_row -->
+                        <div data-lazy="1" class="module_row themify_builder_row repeat tb_4wki922 tf_clearfix">
+                            <div class="row_inner col_align_top tf_box tf_w tf_rel">
+                                <div data-lazy="1" class="module_column tb-column col-full first tb_d36w934 tf_box">
+                                    <div class="tb-column-inner tf_box tf_w">
+                                        <!-- module plain text -->
+                                        <div class="module module-plain-text tb_pwrn935 " data-lazy="1">
+                                            <div class="tb_text_wrap">
+                                                <h5><b>Galeri Kami</b></h5>
+                                            </div>
+                                        </div>
+                                        <!-- /module plain text -->
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /row_inner -->
+                        </div>
+                        <!-- /module_row -->
+                        <!-- module_row -->
+                        <div data-lazy="1" class="module_row themify_builder_row tb_un1i998 tf_clearfix">
+                            <div class="row_inner col_align_top tf_box tf_w tf_rel">
+                                <div data-lazy="1" class="module_column tb-column col-full first tb_smeq999 tf_box">
+                                    <div class="tb-column-inner tf_box tf_w">
+                                        <!-- module gallery -->
+                                        <div class="module gallery module-gallery tb_nn2z953 layout-grid drop-shadow  hide-tablet hide-tablet_landscape hide-mobile"
+                                            data-lazy="1">
+                                            <div class="module-gallery-grid gallery-columns-5 tf_clear">
+                                                {
+                                                    galery.list.map((item,index)=>{
+                                                      return (<dl class="gallery-item" key={index}>
+                                                    <dt class="gallery-icon">
+                                                        <a data-title={item.name} title={item.name}
+                                                            href={item.image}
+                                                            data-rel="tb_nn2z953" class="themify_lightbox"><img
+                                                                fetchpriority="high" decoding="async" width="600"
+                                                                height="350"
+                                                                src={item.image}
+                                                                class={`wp-post-image wp-image-${index}`}
+                                                                title={item.description}
+                                                                alt={item.name}
+                                                                srcset={`${item.image} 600w, ${item.image} 300w`}
+                                                                sizes="(max-width: 600px) 100vw, 600px" /></a>
+                                                    </dt>
+                                                    <dd>
+                                                    </dd>
+                                                </dl>)
+                                                    }
+                                                )}
+                                                
+                                                
+                                            </div>
+                                        </div>
+                                        <!-- /module gallery --><!-- module gallery -->
+                                        <div class="module gallery module-gallery tb_5r8u814 layout-grid drop-shadow  hide-desktop"
+                                            data-lazy="1">
+                                            <div class="module-gallery-grid gallery-columns-3 tf_clear">
+                                                {
+                                                    galery.list.map((item,index)=>{
+                                                      return (<dl class="gallery-item" key={index}>
+                                                    <dt class="gallery-icon">
+                                                        <a data-title={item.name} title={item.name}
+                                                            href={item.image}
+                                                            data-rel="tb_5r8u814" class="themify_lightbox"><img
+                                                                decoding="async" width="600" height="350"
+                                                                src={item.image}
+                                                                class={`wp-post-image wp-image-${index}`}
+                                                                title={item.description}
+                                                                alt={item.name}
+                                                                srcset={`${item.image} 600w, ${item.image} 300w`}
+                                                                sizes="(max-width: 600px) 100vw, 600px" /></a>
+                                                    </dt>
+                                                    <dd>
+                                                    </dd>
+                                                </dl>)
+                                                    }
+                                                )}
+                                                
+                                            </div>
+                                        </div>
+                                        <!-- /module gallery -->
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /row_inner -->
+                        </div>
+                        <!-- /module_row -->
+                    </div>
+                    <!--/themify_builder_content-->
+                    <!-- /comments -->
+                </div>
+                <!-- /.post-content -->
+            </div>
+            <!-- /.type-page -->
+        </main>
+        <!-- /content -->
+    </div>
+    <!-- /layout-container -->
+</div><!-- /body -->
