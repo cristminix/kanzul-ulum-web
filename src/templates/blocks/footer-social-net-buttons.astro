@@ -1,78 +1,71 @@
 ---
-const {company} = Astro.props
-const {fb,ig,youtube,twitter}=company
+const { company } = Astro.props;
+const { fb, ig, youtube, twitter, tiktok } = company;
 ---
+<style>
+  .social-links .icon-medium em{
+    padding: 0;
+  }
+  .social-links{
+    @apply !pt-2;
+  }
+</style>
 <div class="social-widget tf_inline_b tf_vmiddle">
-    <div
-      id="themify-social-links-1011"
-      class="widget themify-social-links"
-    >
+  <div id="themify-social-links-1011" class="widget themify-social-links">
       <ul class="social-links horizontal">
-      {ig&&(
-<li class="social-link-item font-icon icon-medium">
-          <a href={`https://instagram.com/${ig}`} aria-label="" target="_blank" rel="noopener"
-            ><em
-              ><svg
-                aria-label=""
-                role="img"
-                class="tf_fa tf-fab-instagram-square"
-                ><use href="#tf-fab-instagram-square"></use></svg
-              ></em
-            >
-          </a>
-        </li>
-      )}
-        
-        <!-- /themify-link-item -->
-        {fb&&(
-  <li class="social-link-item font-icon icon-medium">
-          <a href={fb} aria-label="" target="_blank" rel="noopener"
-            ><em
-              ><svg
-                aria-label=""
-                role="img"
-                class="tf_fa tf-fab-facebook-square"
-                ><use href="#tf-fab-facebook-square"></use></svg
-              ></em
-            >
-          </a>
-        </li>
-        )}
-      
-        <!-- /themify-link-item -->
-        {twitter&&(
-  <li class="social-link-item font-icon icon-medium">
-          <a href={`https://twitter.com/${twitter}`} aria-label="" target="_blank" rel="noopener"
-            ><em
-              ><svg
-                aria-label=""
-                role="img"
-                class="tf_fa tf-fab-twitter-square"
-                ><use href="#tf-fab-twitter-square"></use></svg
-              ></em
-            >
-          </a>
-        </li>
-        )}
-      
-        <!-- /themify-link-item -->
-        {youtube&&(
- <li class="social-link-item font-icon icon-medium">
-          <a href={`https://youtube.com/${youtube}`} aria-label="" target="_blank" rel="noopener"
-            ><em
-              ><svg
-                aria-label=""
-                role="img"
-                class="tf_fa tf-fab-youtube-square"
-                ><use href="#tf-fab-youtube-square"></use></svg
-              ></em
-            >
-          </a>
-        </li>
-        )}
-       
-        <!-- /themify-link-item -->
+          {ig&&(
+          <li class="social-link-item font-icon icon-medium">
+              <a href={`https://instagram.com/${ig}`} aria-label="" target="_blank" rel="noopener"><em><svg
+                          aria-label="" role="img" class="tf_fa tf-fab-instagram-square">
+                          <use href="#tf-fab-instagram-square"></use>
+                      </svg></em>
+              </a>
+          </li>
+          )}
+
+          <!-- /themify-link-item -->
+          {fb&&(
+          <li class="social-link-item font-icon icon-medium">
+              <a href={fb} aria-label="" target="_blank" rel="noopener"><em><svg aria-label="" role="img"
+                          class="tf_fa tf-fab-facebook-square">
+                          <use href="#tf-fab-facebook-square"></use>
+                      </svg></em>
+              </a>
+          </li>
+          )}
+
+          <!-- /themify-link-item -->
+          {twitter&&(
+          <li class="social-link-item font-icon icon-medium">
+              <a href={`https://twitter.com/${twitter}`} aria-label="" target="_blank" rel="noopener"><em><svg
+                          aria-label="" role="img" class="tf_fa tf-fab-twitter-square">
+                          <use href="#tf-fab-twitter-square"></use>
+                      </svg></em>
+              </a>
+          </li>
+          )}
+          {tiktok&&(
+          <li class="social-link-item font-icon icon-medium">
+              <a href={`https://tiktok.com/${tiktok}`} aria-label="" target="_blank" rel="noopener"><em><svg
+                          aria-label="" role="img" class="tf_fa tf-fab-tiktok">
+                          <use href="#tf-fab-tiktok"></use>
+                      </svg></em>
+              </a>
+          </li>
+          )}
+          <!-- /themify-link-item -->
+          {youtube&&(
+          <li class="social-link-item font-icon icon-medium">
+              <a href={`https://youtube.com/${youtube}`} aria-label="" target="_blank" rel="noopener"><em><svg
+                          aria-label="" role="img" class="tf_fa tf-fab-youtube-square">
+                          <use href="#tf-fab-youtube-square"></use>
+                      </svg></em>
+              </a>
+          </li>
+          )}
+
+          <!-- /themify-link-item -->
       </ul>
-    </div>
   </div>
-  <!-- /.social-widget -->
+</div>
+<!-- /.social-widget -->

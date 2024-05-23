@@ -1,0 +1,120 @@
+.header-widget-full {
+/* @apply !bg-[#22AA86] !text-white !flex !font-[14px] ; */
+}
+.header-widget-full {
+@apply !bg-[#22AA86];
+}
+.header-widget-full .header-widget-inner{
+@apply flex items-center h-[48px]  text-white font-[14px] ;
+}
+
+.header-widget-inner .col4-2{
+    @apply !w-1/2 !p-0 !m-0;
+}
+#footer .social-links,
+.header-widget-inner .col4-2 .social-links {
+    @apply !p-0 !flex gap-4;
+}
+#footer .social-links .social-link-item,
+.header-widget-inner .col4-2 .social-links .social-link-item{
+    @apply !m-0;
+}
+
+#footer .social-links .social-link-item em,
+.header-widget-inner .col4-2 .social-links .social-link-item em{
+    @apply !p-[5px] !m-0 !w-[28px] !h-[28px] flex items-center /*border*/;
+}
+
+#footer  .social-links .social-link-item em svg,
+.header-widget-inner .col4-2 .social-links .social-link-item em svg{
+    @apply !p-0 !m-0 !text-white !w-[18px] !h-[18px];
+}
+
+.header-widget-inner .col4-2 .textwidget p{
+ @apply !m-0 !uppercase;
+}
+
+#headerwrap #header{
+    @apply lg:h-[132px];
+}
+
+#headerwrap.fixed-header #header{
+    @apply lg:h-[78px];
+}
+
+#pagewrap .back-top.back-top-float, .full-section-scrolling #footerwrap .back-top .arrow-up a, .footer-horizontal-left #footerwrap .back-top .arrow-up a, .footer-horizontal-right #footerwrap .back-top .arrow-up a, .footer-left-col #footerwrap .back-top .arrow-up a, .footer-right-col #footerwrap .back-top .arrow-up a, #footer .back-top .arrow-up a{
+    @apply !bg-[#22AA86] opacity-[0.8] hover:opacity-[1]
+}
+.back-top {
+}
+.back-top a:before{
+   @apply !hidden;
+}
+
+.back-top a{
+
+    @apply !flex items-center;
+}
+.back-top em {
+    @apply !text-white !mx-auto !my-2;
+}
+
+.floatwa{
+    @apply flex items-center flex-col gap-2 px-4 !mb-2;
+}
+.floatwa .tombolwa a{
+    @apply !flex items-center justify-center !w-[44px] !h-[44px]  !bg-[#22AA86] opacity-[0.8] hover:opacity-[1] rounded-full !text-white;
+}
+.floatwa .whatsapp a em svg{
+    @apply !w-[32px] !h-[32px] 
+}
+
+.floatwa .phone a em svg{
+    @apply !w-[22px] !h-[22px]
+    
+}
+
+
+.tparrows  {   
+    cursor:pointer; background:#000; 
+/*    background:rgba(0,0,0,0.5); */
+    width:40px;height:40px;
+    position:absolute; display:block; z-index:1000; 
+
+    @apply !bg-transparent !opacity-[0.8] hover:!opacity-[0.5]
+}
+.tparrows:before{
+    font-size: 40px !important;
+    width: 50px !important;
+    height: 50px !important;
+    line-height: 50px !important;
+    font-size: 40px !important;
+    transition: all 0.3s !important;
+    -webkit-transition: all 0.3s !important;
+}
+
+#footerwrap{
+    background: rgb(68, 81, 78) url('/assets/images/world-map.png') no-repeat top left !important;
+    background-attachment: cover !important;
+    @apply  pt-[300px] pb-[30px] !text-white
+}
+
+#footerwrap #footer{
+    @apply !text-white;
+}
+
+#footerwrap #footer .widgettitle{
+    @apply !text-white !uppercase;
+
+}
+
+#copyright-footer{
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: rgba(255,255,255,.80);
+    @apply !bg-[#303d3a] !text-white py-[17px];
+}
+#copyright-footer .inside{
+    @apply flex items-center h-[60px] px-4;
+}

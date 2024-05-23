@@ -16,9 +16,12 @@ const {company,cp} = Astro.props;
       <div
         class="back-top tf_textc tf_clearfix back-top-float back-top-hide"
       >
-        <div class="arrow-up">
-          <a aria-label="Back to top" href="#header"
-            ><span class="screen-reader-text">Back To Top</span></a
+        <div class="arrow-up-none">
+          <a aria-label="Back to top" href="#header">
+          <em><svg aria-label="" role="img" class="tf_fa bi-double-chevron">
+                          <use href="#bi-double-chevron"></use>
+                      </svg></em>
+          <span class="screen-reader-text">Back To Top</span></a
           >
         </div>
       </div>
@@ -46,13 +49,17 @@ const {company,cp} = Astro.props;
           <!-- /footer-widgets -->
         </div>
       </div>
-      <div class="footer-text tf_clear tf_clearfix">
-        <div class="footer-text-inner">
-          <div class="one">
-            © 2021 Pondok Pesantren Kanzul Ulum Cirebon. All Rights Reserved.
-          </div>
-        </div>
-      </div>
+      
       <!-- /.footer-text -->
     </footer><!-- /#footer -->
   </div><!-- /#footerwrap -->
+
+  <div id="copyright-footer" >
+    <div class="inside pagewidth ">
+        <div class="footer-text-inner">
+          <div class="one">
+            2024 © Copyright, Pondok Pesantren Kanzul Ulum Cirebon. All Rights Reserved.
+          </div>
+        </div>
+      </div>
+  </div>

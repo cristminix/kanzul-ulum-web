@@ -2,22 +2,18 @@
 const {contact} = Astro.props;
 ---
 <div class="floatwa">
-    <div class="tombolwa">
+    <div class="tombolwa whatsapp">
       <a
         href={`https://api.whatsapp.com/send?phone=${contact.whatsapp}`}
-        target="_blank"
-      >
-        <img
-          src="/assets/images/fly-whatsapp.png"
-        /></a
-      >
+        target="_blank"> <em><svg role="img" class="tf_fa fa-whatsapp">
+                          <use href="#fa-whatsapp"></use>
+                      </svg></em></a>
     </div>
 
-    <div class="tombolwa">
+    <div class="tombolwa phone">
       <a href={`tel:${contact.phone}`} target="_blank">
-        <img
-          src="/assets/images/fly-phone.png"
-        /></a
-      >
+        <em><svg role="img" class="tf_fa fa-phone">
+                          <use href="#fa-phone"></use>
+                      </svg></em></a>
     </div>
   </div>
